@@ -1,3 +1,6 @@
+import { iniciarCronometro, isCronometrando } from './cronometro.js';
+import { incrementarTentativas, incrementarPontos } from './contabilizar_pontos.js';
+
 const TEMPO_VERIFICACAO = 800;
 const TEMPO_BORDA = 300;
 
@@ -22,6 +25,8 @@ function esconderCarta(carta) {
 }
 
 function finalizarVerificacao(cartaA, cartaB) {
+  incrementarTentativas();
+
   const mesmoPar = cartaA.dataset.nome === cartaB.dataset.nome;
 
   if (mesmoPar) {
@@ -29,6 +34,9 @@ function finalizarVerificacao(cartaA, cartaB) {
     cartaB.classList.add('par-correto');
     cartasEncontradas.add(cartaA);
     cartasEncontradas.add(cartaB);
+    
+    incrementarPontos();
+
     verificandoPar = false;
   } else {
     cartaA.classList.add('par-errado');
@@ -58,6 +66,10 @@ function lidarComClique(evento) {
     return;
   }
 
+  if (!isCronometrando()) {
+    iniciarCronometro();
+  }
+
   virarCarta(carta);
   cartasSelecionadas.push(carta);
 
@@ -84,6 +96,9 @@ function lidarComTeclado(evento) {
 export function iniciarViradaCartas() {
   const subcontainerCartas = document.querySelector('.subcontainer_cartas');
   if (!subcontainerCartas) return;
+
+  subcontainerCartas.removeEventListener('click', lidarComClique);
+  subcontainerCartas.removeEventListener('keydown', lidarComTeclado);
 
   subcontainerCartas.addEventListener('click', lidarComClique);
   subcontainerCartas.addEventListener('keydown', lidarComTeclado);
