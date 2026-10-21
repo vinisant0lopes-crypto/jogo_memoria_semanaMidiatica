@@ -32,3 +32,18 @@
     transform: scale(1.1);
 }
  
+
+/* Media Query para Notebooks e telas maiores (ex: largura a partir de 1024px) */
+@media (min-width: 1024px) {
+    .container_config {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Distribui o espaço entre as infos e os botões */
+    }
+
+    .button_container {
+        position: static; /* Remove o posicionamento relativo que joga para baixo */
+        margin-top: auto;  /* Empurra os botões para uma posição controlada */
+        margin-bottom: 20px;
+    }
+}
