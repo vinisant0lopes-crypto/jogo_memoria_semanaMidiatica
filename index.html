@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style/style.css">
+    <link rel="stylesheet" href="./src/style/cartas.css">
+    <link rel="stylesheet" href="./src/style/button.css">
+</head>
+    <body>
+
+        <div class="container_principal">
+
+            <div class="container_cartas">
+
+                <div class="subcontainer_cartas">
+                    <div class="carta" id="carta_base">
+                        <img src="./src/image/icons/internet.png" alt="internet">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="container_config">
+                
+                <div class="info">
+                    <div class="tempo">
+                        <p>Tempo: <span id="tempo">00:00</span></p>
+                    </div>
+                    <div class="tentativas">
+                        <p>Tentativas: <span id="tentativas">0</span></p>
+                    </div>
+                    <div class="pontos">
+                        <p>Pontos: <span id="pontos">0</span></p>
+                    </div>
+                    <div class="respostas_quiz">
+                        <p>Respostas corretas do quiz: <span id="quiz_respostas">0</span></p>
+                    </div>
+                </div>
+
+                <div class="button_container">
+
+                    <div class="button">
+                        <button>Reiniciar Jogo</button>
+                    </div>
+                    <div class="button">
+                        <button>Dificuldade</button>
+                    </div>
+                    <div class="button">
+                        <button>Placar</button>
+                    </div>
+                    <div class="button">
+                        <button>Pausar</button>
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+        <script type="module" src="./src/js/script.js"></script>
+    </body>
+</html>

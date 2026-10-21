@@ -1,0 +1,68 @@
+/* Css voltado para manipulação de cartas */
+
+
+.carta{
+    width: var(--largura-carta, 120px);
+    height: calc(var(--largura-carta, 120px) * 1.5);
+
+    border-radius: 10px;
+    cursor: pointer;
+    perspective: 800px;
+}
+
+.carta:focus-visible{
+    outline: 3px solid #4da3ff;
+    outline-offset: 3px;
+}
+
+.carta__interna{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.carta.virada .carta__interna{
+    transform: rotateY(180deg);
+}
+
+.carta__face{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.carta__verso{
+    background-color: #2f5d8c;
+}
+
+.carta__frente{
+    background-color: rgb(255, 255, 255);
+    transform: rotateY(180deg);
+}
+
+.carta.par-correto .carta__frente{
+    box-shadow: inset 0 0 0 5px #25a244;
+}
+
+.carta.par-errado .carta__frente{
+    box-shadow: inset 0 0 0 5px #d62828;
+}
+
+.carta img{
+    width: 70%;
+    height: 50%;
+
+    align-self: center;
+    justify-self: center;
+
+    object-fit: contain;
+    display: block;
+
+ 
+}
