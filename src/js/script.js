@@ -17,7 +17,6 @@ import { iniciarQuiz, reiniciarQuiz } from './quiz.js';
 import { iniciarLogin } from './login.js';
 import { iniciarPopups } from './popups.js';
 
-// Chamada da função para gerar as cartas no container ao carregar o jogo
 gerarCartas();
 iniciarViradaCartas();
 iniciarDificuldade();
