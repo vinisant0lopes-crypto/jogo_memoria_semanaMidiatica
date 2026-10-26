@@ -13,6 +13,12 @@ const paresPorDificuldade = {
   edificil: 18
 };
 
+let dificuldadeAtual = 'facil';
+
+export function obterDificuldadeAtual() {
+  return dificuldadeAtual;
+}
+
 // legal
 
 function fecharOpcoes(botao, opcoes) {
@@ -41,6 +47,12 @@ export function iniciarDificuldade() {
     if (!quantidade) return;
 
     definirQuantidadePares(quantidade);
+    dificuldadeAtual = opcao.dataset.dificuldade;
+    document.dispatchEvent(
+      new CustomEvent('streak:difficulty-changed', {
+        detail: { dificuldade: dificuldadeAtual }
+      })
+    );
     reiniciarEstadoCartas();
     reiniciarCronometro();
     reiniciarContabilizacao();

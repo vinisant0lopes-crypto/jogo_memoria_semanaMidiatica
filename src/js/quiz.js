@@ -11,7 +11,7 @@ const categoriaPorIcone = {
   security: 'segurança e privacidade digital',
   region: 'desigualdade social e regional',
   financial_education: 'educação financeira digital',
-  comunity: 'tecnologia e comunidade'
+  community: 'tecnologia e comunidade'
 };
 
 let perguntas = {};

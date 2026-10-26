@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     padding: 16px;
-    background: rgb(0 0 0 / 55%);
+    background: rgb(2 10 17 / 78%);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
@@ -18,16 +18,22 @@
 
 .placar {
     position: relative;
-    width: min(850px, 100%);
-    max-height: min(600px, 90vh);
-    overflow: auto;
-    padding: 24px;
-    background: #5a5a5a;
-    color: white;
+    width: min(1100px, calc(100vw - 48px));
+    min-height: min(520px, 80vh);
+    max-height: min(760px, 92vh);
+    overflow-x: auto;
+    overflow-y: auto;
+    padding: 34px 38px 38px;
+    border: 1px solid var(--azul-borda);
+    border-radius: 18px;
+    background: var(--azul-painel);
+    color: var(--branco);
+    box-shadow: var(--sombra);
 }
 
 .placar h2 {
-    margin: 0 0 16px;
+    margin: 0 0 22px;
+    font-size: 1.65rem;
     text-align: center;
 }
 
@@ -41,14 +47,16 @@
     position: relative;
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
 }
 
 .placar_filtro-botao,
 .placar_filtros button {
     border: 0;
-    border-radius: 4px;
-    background: white;
+    border-radius: 8px;
+    background: var(--azul-acao);
+    color: #03111b;
+    font-weight: 700;
     cursor: pointer;
 }
 
@@ -72,9 +80,11 @@
     display: flex;
     flex-direction: column;
     gap: 4px;
-    width: 180px;
+    width: 220px;
     padding: 8px;
-    background: #5a5a5a;
+    border: 1px solid var(--azul-borda);
+    border-radius: 8px;
+    background: var(--azul-noite);
 }
 
 .placar_filtros button {
@@ -84,21 +94,58 @@
 .placar_tabela {
     width: 100%;
     border-collapse: collapse;
-    color: #111;
-    background: white;
+    color: var(--azul-noite);
+    background: var(--branco);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .placar_tabela th,
 .placar_tabela td {
-    padding: 7px 8px;
+    padding: 12px 14px;
     text-align: center;
 }
 
+.placar_tabela th {
+    font-size: 1rem;
+}
+
+.placar_tabela td {
+    font-size: 1.05rem;
+}
+
 .placar_tabela tbody tr:nth-child(odd) {
-    background: #d3d3d3;
+    background: #dce8ee;
+}
+
+.placar_dificuldade {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    margin-right: 4px;
+    vertical-align: middle;
+}
+
+.placar_dificuldade img {
+    width: 21px;
+    height: 21px;
+    object-fit: contain;
 }
 
 .placar_vazio {
     margin: 16px 0 0;
     text-align: center;
+}
+
+@media (max-width: 700px) {
+    .placar {
+        width: calc(100vw - 24px);
+        min-height: 0;
+        max-height: 92vh;
+        padding: 26px 18px 24px;
+    }
+
+    .placar_tabela {
+        min-width: 650px;
+    }
 }

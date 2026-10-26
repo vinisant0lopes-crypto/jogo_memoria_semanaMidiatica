@@ -1,3 +1,5 @@
+import { obterMultiplicadorStreak } from './streak.js';
+
 let tentativas = 0;
 let pontos = 0;
 let respostasQuiz = 0;
@@ -20,7 +22,7 @@ export function iniciarContabilizacao() {
 
   document.addEventListener('memory:pair-result', (evento) => {
     if (evento.detail.correto) {
-      pontos += 10;
+      pontos += Math.round(10 * obterMultiplicadorStreak());
       atualizarTela();
     }
   });

@@ -2,676 +2,1326 @@
   "perguntas quiz": {
     "internet": [
       {
-        "pergunta": "O que significa inclusão digital?",
+        "pergunta": "Qual fator caracteriza a exclusão digital?",
         "alternativa": [
-          "Garantir que todas as pessoas tenham oportunidades de acessar e utilizar tecnologias digitais",
-          "Permitir que apenas estudantes usem a internet",
-          "Substituir todos os livros por computadores",
-          "Oferecer internet somente para quem pode pagar"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Qual é uma das principais dificuldades de acesso à internet enfrentadas por famílias de baixa renda?",
-        "alternativa": [
-          "O excesso de computadores em casa",
-          "O alto custo da conexão e dos equipamentos",
-          "A facilidade de comprar celulares novos",
-          "A grande quantidade de redes gratuitas"
+          "O uso de diferentes navegadores",
+          "A desigualdade no acesso e no uso da tecnologia",
+          "A existência de redes sociais",
+          "A atualização de sistemas operacionais"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Como os pontos de Wi-Fi gratuito em espaços públicos podem contribuir para a inclusão digital?",
+        "pergunta": "O que caracteriza a chamada segunda divisão digital?",
         "alternativa": [
-          "Impedindo o acesso de estudantes",
-          "Substituindo a necessidade de educação",
-          "Permitindo que mais pessoas acessem informações e serviços online",
-          "Garantindo que todos tenham um computador próprio"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Por que é importante ensinar as pessoas a identificar notícias falsas na internet?",
-        "alternativa": [
-          "Para impedir que elas leiam notícias",
-          "Para fazer com que compartilhem tudo rapidamente",
-          "Para limitar o acesso às redes sociais",
-          "Para ajudar a reconhecer informações enganosas e evitar golpes"
+          "A ausência total de eletricidade",
+          "A proibição de redes sociais",
+          "A falta de computadores nas empresas",
+          "A diferença nas habilidades de uso da tecnologia"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Qual iniciativa pode ajudar pessoas que têm pouca experiência com tecnologia?",
+        "pergunta": "Por que possuir um celular não garante inclusão digital plena?",
         "alternativa": [
-          "Oferecer cursos gratuitos de informática e uso seguro da internet",
-          "Cobrar taxas elevadas por aulas de informática",
-          "Impedir o uso de computadores em bibliotecas",
-          "Exigir experiência digital para acessar serviços públicos"
+          "Porque podem faltar conexão, habilidades e recursos adequados",
+          "Porque celulares não acessam serviços públicos",
+          "Porque computadores não possuem internet",
+          "Porque aplicativos funcionam apenas em empresas"
         ],
         "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual medida reduz o consumo de dados móveis?",
+        "alternativa": [
+          "Aumentar a resolução dos vídeos",
+          "Manter todos os aplicativos atualizados simultaneamente",
+          "Baixar conteúdos usando uma rede Wi-Fi",
+          "Reproduzir vídeos em alta definição"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "O que significa alfabetização digital?",
+        "alternativa": [
+          "Aprender somente programação avançada",
+          "Desenvolver habilidades para utilizar tecnologias criticamente",
+          "Memorizar nomes de aplicativos populares",
+          "Substituir a leitura por conteúdos audiovisuais"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Por que a neutralidade da rede é relevante?",
+        "alternativa": [
+          "Porque elimina os custos de conexão",
+          "Porque impede qualquer coleta de dados",
+          "Porque garante internet gratuita universal",
+          "Porque limita a discriminação do tráfego online"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual prática ajuda a avaliar a confiabilidade de uma notícia?",
+        "alternativa": [
+          "Verificar autoria, data e fontes independentes",
+          "Considerar o número de compartilhamentos",
+          "Confiar apenas no título publicado",
+          "Aceitar mensagens enviadas por conhecidos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "O que é uma bolha informacional?",
+        "alternativa": [
+          "Uma falha física no roteador",
+          "Um bloqueio completo de páginas públicas",
+          "Uma exposição predominante a conteúdos semelhantes",
+          "Um sistema de proteção contra vírus"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual barreira afeta mais quem depende exclusivamente de dados móveis?",
+        "alternativa": [
+          "A impossibilidade de instalar aplicativos",
+          "O limite de consumo e o custo da conexão",
+          "A ausência de navegadores para celulares",
+          "A proibição de acessar plataformas educacionais"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Como avaliar uma política de inclusão digital?",
+        "alternativa": [
+          "Contando apenas os equipamentos comprados",
+          "Medindo somente o número de aplicativos lançados",
+          "Verificando apenas a velocidade máxima anunciada",
+          "Analisando acesso, habilidades e benefícios alcançados"
+        ],
+        "resposta correta": "3"
       }
     ],
     "infraestrutura": [
       {
-        "pergunta": "O que é um servidor web?",
+        "pergunta": "Qual é a função principal de um servidor web?",
         "alternativa": [
-          "Um programa que cria gráficos para sites",
-          "Um sistema que armazena e entrega páginas e conteúdos da web",
-          "Um dispositivo usado somente para jogos",
-          "Um aplicativo exclusivo para fazer chamadas telefônicas"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "Como a falta de infraestrutura de internet em áreas rurais pode afetar a população?",
-        "alternativa": [
-          "Facilitando o acesso a todos os cursos online",
-          "Diminuindo a necessidade de serviços públicos",
-          "Dificultando o acesso à educação, à informação e a serviços digitais",
-          "Garantindo conexão de alta velocidade em todas as casas"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Qual medida pode melhorar o acesso à internet em comunidades afastadas?",
-        "alternativa": [
-          "Retirar as antenas de comunicação",
-          "Reduzir os locais públicos com conexão",
-          "Limitar a instalação de redes de telecomunicações",
-          "Ampliar redes de banda larga e outras tecnologias de conexão"
-        ],
-        "resposta correta": "3"
-      },
-      {
-        "pergunta": "Por que bibliotecas e escolas com computadores e internet são importantes para a inclusão digital?",
-        "alternativa": [
-          "Porque oferecem recursos tecnológicos a pessoas que talvez não os tenham em casa",
-          "Porque eliminam a necessidade de professores",
-          "Porque substituem todos os serviços de saúde",
-          "Porque impedem o acesso à informação fora desses locais"
+          "Entregar conteúdos solicitados por clientes",
+          "Converter energia elétrica em dados",
+          "Substituir todos os roteadores",
+          "Criar automaticamente conexões via satélite"
         ],
         "resposta correta": "0"
       },
       {
-        "pergunta": "O que pode acontecer quando uma cidade oferece serviços públicos apenas pela internet, sem alternativas acessíveis?",
+        "pergunta": "Qual vantagem a fibra óptica oferece?",
         "alternativa": [
-          "Todas as pessoas passam a ter conexão automaticamente",
-          "Pessoas sem internet ou habilidades digitais podem ter dificuldade para acessar seus direitos",
-          "O acesso aos serviços se torna igual para todos",
-          "A necessidade de atendimento presencial desaparece para todos"
+          "Dispensa equipamentos de rede",
+          "Funciona sem infraestrutura física",
+          "Oferece alta capacidade e baixa perda de sinal",
+          "Garante conexão gratuita em qualquer lugar"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que áreas rurais podem ter internet mais cara?",
+        "alternativa": [
+          "Porque não existem tecnologias sem fio",
+          "Porque todos os moradores usam satélites",
+          "Porque a demanda sempre supera a oferta",
+          "Porque a infraestrutura atende áreas dispersas"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual equipamento encaminha pacotes entre redes?",
+        "alternativa": [
+          "Monitor",
+          "Roteador",
+          "Teclado",
+          "Projetor"
         ],
         "resposta correta": "1"
+      },
+      {
+        "pergunta": "O que significa latência em uma conexão?",
+        "alternativa": [
+          "O tempo de resposta entre pontos da rede",
+          "A quantidade de arquivos armazenados",
+          "O tamanho físico do cabo utilizado",
+          "O número de usuários cadastrados"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual problema pode afetar redes comunitárias sem manutenção?",
+        "alternativa": [
+          "A eliminação automática de interferências",
+          "A redução permanente dos custos",
+          "A interrupção do serviço por falhas técnicas",
+          "A ampliação garantida da cobertura"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que pontos públicos de acesso precisam de segurança?",
+        "alternativa": [
+          "Para impedir conexões simultâneas",
+          "Para eliminar a necessidade de senhas",
+          "Para garantir anonimato absoluto",
+          "Para reduzir riscos aos usuários conectados"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual estratégia amplia a conectividade em regiões isoladas?",
+        "alternativa": [
+          "Remover redes locais existentes",
+          "Combinar fibra, rádio e satélite conforme a região",
+          "Utilizar exclusivamente redes telefônicas antigas",
+          "Concentrar antenas nos grandes centros"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "O que é redundância em uma infraestrutura de rede?",
+        "alternativa": [
+          "A repetição de senhas pessoais",
+          "A duplicação desnecessária de arquivos",
+          "A existência de caminhos alternativos para conexão",
+          "A limitação do número de dispositivos"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual indicador revela melhor a qualidade real da internet?",
+        "alternativa": [
+          "Velocidade, estabilidade e latência observadas",
+          "Quantidade de anúncios do provedor",
+          "Cor dos cabos instalados",
+          "Número de modelos de roteadores vendidos"
+        ],
+        "resposta correta": "0"
       }
     ],
     "escola": [
       {
-        "pergunta": "Como a falta de computador ou internet em casa pode afetar um estudante?",
+        "pergunta": "O que caracteriza uma desigualdade digital educacional?",
         "alternativa": [
-          "Garantindo notas melhores",
-          "Eliminando a necessidade de estudar",
-          "Dificultando a realização de pesquisas e atividades escolares online",
-          "Garantindo acesso a todos os materiais digitais"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Qual ação escolar pode ajudar a reduzir a desigualdade digital entre estudantes?",
-        "alternativa": [
-          "Exigir que todos comprem computadores caros",
-          "Realizar atividades somente pela internet, sem suporte",
-          "Proibir o uso de computadores na escola",
-          "Disponibilizar laboratórios, equipamentos emprestados e acesso à internet"
+          "A existência de diferentes disciplinas",
+          "A utilização de livros impressos",
+          "A adoção de métodos variados de ensino",
+          "A diferença nas condições de aprender com tecnologia"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Por que é importante ensinar habilidades digitais nas escolas públicas?",
+        "pergunta": "Qual estratégia beneficia alunos com conexão limitada?",
         "alternativa": [
-          "Para ampliar as oportunidades de aprendizagem, trabalho e participação social",
-          "Para substituir todas as matérias escolares",
-          "Para restringir o acesso a informações",
-          "Para tornar obrigatório o uso de equipamentos caros"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Como um professor pode incluir estudantes que têm acesso limitado à internet em casa?",
-        "alternativa": [
-          "Aplicando penalidades por não terem computador",
-          "Oferecendo materiais impressos, prazos adequados e alternativas de acesso",
-          "Exigindo conexão permanente fora da escola",
-          "Impedindo que esses estudantes participem de trabalhos em grupo"
+          "Exigir aulas por vídeo continuamente",
+          "Oferecer materiais offline e atividades alternativas",
+          "Avaliar apenas a participação online",
+          "Proibir empréstimos de equipamentos"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "O que significa acessibilidade digital no ambiente escolar?",
+        "pergunta": "Por que distribuir computadores pode ser insuficiente?",
         "alternativa": [
-          "Permitir o uso de plataformas apenas em computadores novos",
-          "Oferecer materiais exclusivamente em vídeos",
-          "Criar conteúdos e ferramentas que possam ser utilizados por pessoas com diferentes necessidades",
-          "Impedir o uso de leitores de tela"
+          "Porque equipamentos nunca ajudam no ensino",
+          "Porque estudantes não utilizam programas educacionais",
+          "Porque também são necessários suporte e formação",
+          "Porque a aprendizagem depende apenas de livros"
         ],
         "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual prática favorece a cidadania digital na escola?",
+        "alternativa": [
+          "Ensinar privacidade, ética e avaliação de fontes",
+          "Proibir debates sobre informações online",
+          "Priorizar a memorização de marcas",
+          "Limitar atividades à digitação de textos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "O que é um recurso educacional aberto?",
+        "alternativa": [
+          "Um material acessível apenas mediante assinatura",
+          "Um conteúdo que não permite adaptações",
+          "Um programa exclusivo de uso escolar",
+          "Um recurso com licença que permite usos definidos"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como avaliar a eficácia de um laboratório escolar?",
+        "alternativa": [
+          "Contando apenas as cadeiras disponíveis",
+          "Medindo uso, aprendizagem e acesso dos estudantes",
+          "Verificando somente a marca dos computadores",
+          "Contabilizando os programas instalados"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual é um risco do ensino exclusivamente digital?",
+        "alternativa": [
+          "A redução automática de custos para todos",
+          "A eliminação de barreiras geográficas",
+          "A exclusão de alunos sem acesso adequado",
+          "A melhoria garantida da aprendizagem"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que ensinar pesquisa crítica na internet?",
+        "alternativa": [
+          "Para distinguir evidências de informações enganosas",
+          "Para aumentar o número de páginas visitadas",
+          "Para substituir todas as fontes acadêmicas",
+          "Para impedir consultas a diferentes opiniões"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual medida protege a privacidade de estudantes?",
+        "alternativa": [
+          "Publicar notas com dados pessoais",
+          "Compartilhar senhas entre turmas",
+          "Armazenar informações sem controle de acesso",
+          "Minimizar dados coletados e restringir seu acesso"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como reduzir a desigualdade no uso de plataformas educacionais?",
+        "alternativa": [
+          "Exigir aparelhos de última geração",
+          "Garantir acessibilidade, suporte e opções de baixo consumo",
+          "Eliminar materiais impressos imediatamente",
+          "Avaliar estudantes pelo modelo de celular"
+        ],
+        "resposta correta": "1"
       }
     ],
     "finanças / economia": [
       {
-        "pergunta": "Como a inclusão digital pode ajudar uma pessoa a procurar emprego?",
+        "pergunta": "Como a exclusão digital pode afetar a renda familiar?",
         "alternativa": [
-          "Garantindo contratação sem entrevista",
-          "Eliminando a necessidade de qualificação",
-          "Impedindo o acesso a vagas de trabalho",
-          "Permitindo consultar vagas, elaborar currículos e enviar candidaturas online"
-        ],
-        "resposta correta": "3"
-      },
-      {
-        "pergunta": "Qual dificuldade financeira pode impedir uma família de participar plenamente do mundo digital?",
-        "alternativa": [
-          "Não ter recursos suficientes para pagar internet, equipamentos e manutenção",
-          "Ter acesso a cursos gratuitos",
-          "Utilizar computadores compartilhados em bibliotecas",
-          "Receber orientação gratuita sobre segurança digital"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Qual é uma vantagem de aprender a utilizar serviços bancários digitais com segurança?",
-        "alternativa": [
-          "Eliminar todos os riscos de fraude",
-          "Consultar saldos, pagar contas e realizar operações sem precisar sempre se deslocar a uma agência",
-          "Garantir lucro em qualquer investimento",
-          "Dispensar senhas e formas de autenticação"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "Como cursos gratuitos de capacitação digital podem contribuir para a economia de uma comunidade?",
-        "alternativa": [
-          "Impedindo a criação de pequenos negócios",
-          "Reduzindo o acesso a oportunidades de trabalho",
-          "Ajudando pessoas a desenvolver habilidades para trabalhar, empreender e acessar novos mercados",
-          "Obrigando todos os trabalhadores a atuar exclusivamente online"
+          "Garantindo acesso a empregos melhores",
+          "Eliminando custos de transporte",
+          "Limitando oportunidades de trabalho e serviços",
+          "Aumentando automaticamente a produtividade"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "Qual atitude ajuda a proteger uma pessoa de golpes financeiros pela internet?",
+        "pergunta": "Qual é uma característica da economia digital?",
         "alternativa": [
-          "Compartilhar senhas com desconhecidos",
-          "Clicar em todos os links recebidos por mensagem",
-          "Informar códigos bancários a quem ligar oferecendo prêmios",
-          "Desconfiar de ofertas suspeitas e nunca compartilhar senhas ou códigos de segurança"
+          "O uso de redes e dados para atividades econômicas",
+          "A eliminação de todas as transações físicas",
+          "A ausência de intermediários comerciais",
+          "A garantia de renda igual para todos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Por que pequenos negócios podem enfrentar barreiras digitais?",
+        "alternativa": [
+          "Porque vendas online dispensam conhecimentos",
+          "Porque plataformas não aceitam pequenos vendedores",
+          "Porque a publicidade digital é sempre gratuita",
+          "Porque faltam recursos, capacitação ou conectividade"
         ],
         "resposta correta": "3"
+      },
+      {
+        "pergunta": "O que é uma fintech?",
+        "alternativa": [
+          "Uma empresa que fabrica exclusivamente computadores",
+          "Uma empresa que utiliza tecnologia em serviços financeiros",
+          "Uma instituição dedicada apenas ao ensino básico",
+          "Um sistema físico de distribuição elétrica"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual risco acompanha o crédito digital sem planejamento?",
+        "alternativa": [
+          "A eliminação dos juros contratuais",
+          "A redução garantida das parcelas",
+          "O endividamento por custos mal compreendidos",
+          "A aprovação automática de renda"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como a automação pode afetar trabalhadores vulneráveis?",
+        "alternativa": [
+          "Pode substituir tarefas sem oferecer transição profissional",
+          "Garante estabilidade em todas as profissões",
+          "Elimina a necessidade de qualificação",
+          "Distribui renda igualmente entre trabalhadores"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual política pode ampliar oportunidades na economia digital?",
+        "alternativa": [
+          "Restringir cursos a trabalhadores empregados",
+          "Reduzir o acesso a ferramentas gratuitas",
+          "Impedir pequenos negócios de vender online",
+          "Combinar capacitação, conectividade e apoio a empreendedores"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Por que a exclusão financeira digital merece atenção?",
+        "alternativa": [
+          "Porque todas as pessoas preferem dinheiro físico",
+          "Porque serviços essenciais podem exigir habilidades digitais",
+          "Porque pagamentos eletrônicos não têm utilidade",
+          "Porque bancos digitais não utilizam internet"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual é um indicador útil de inclusão econômica digital?",
+        "alternativa": [
+          "O número de cores de aplicativos",
+          "A quantidade de anúncios comerciais",
+          "O acesso efetivo a serviços e oportunidades econômicas",
+          "O número de marcas de celulares"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como avaliar uma iniciativa de capacitação profissional digital?",
+        "alternativa": [
+          "Acompanhando conclusão, competências e oportunidades alcançadas",
+          "Contando apenas inscrições iniciais",
+          "Medindo somente equipamentos distribuídos",
+          "Verificando exclusivamente horas de propaganda"
+        ],
+        "resposta correta": "0"
       }
     ],
     "idosos": [
       {
-        "pergunta": "Por que algumas pessoas idosas podem enfrentar dificuldades no uso de tecnologias digitais?",
+        "pergunta": "O que favorece a autonomia digital de pessoas idosas?",
         "alternativa": [
-          "Porque todas têm dificuldades para aprender",
-          "Porque podem ter tido menos oportunidades de contato com essas tecnologias e encontrar barreiras de acessibilidade",
-          "Porque a tecnologia não pode ser usada por pessoas idosas",
-          "Porque os celulares funcionam somente para jovens"
+          "Restringir o uso a familiares",
+          "Ensinar práticas com apoio e ritmo individual",
+          "Substituir todas as decisões pessoais",
+          "Exigir memorização de termos técnicos"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Qual recurso pode facilitar o uso de um celular por uma pessoa idosa com dificuldade de visão?",
+        "pergunta": "Qual adaptação ajuda usuários com baixa visão?",
         "alternativa": [
-          "Diminuir o tamanho de todas as letras",
-          "Ocultar os controles da tela",
-          "Aumentar o tamanho do texto e utilizar recursos de leitura de tela, quando necessário",
-          "Desativar os recursos de acessibilidade"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Como oficinas gratuitas de informática para idosos podem contribuir para a inclusão social?",
-        "alternativa": [
-          "Ajudando-os a se comunicar, acessar serviços e aprender a utilizar tecnologias com autonomia",
-          "Impedindo o contato com familiares",
-          "Substituindo todas as formas de convivência presencial",
-          "Obrigando-os a utilizar somente aplicativos bancários"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Qual orientação ajuda uma pessoa idosa a evitar golpes digitais?",
-        "alternativa": [
-          "Compartilhar códigos de confirmação com qualquer pessoa",
-          "Acreditar em mensagens que prometem dinheiro fácil",
-          "Instalar todos os aplicativos indicados por desconhecidos",
-          "Não compartilhar senhas, verificar remetentes e pedir ajuda a alguém de confiança quando houver suspeita"
+          "Diminuir o contraste dos textos",
+          "Ocultar os controles principais",
+          "Reduzir o tamanho das fontes",
+          "Ampliar textos e ajustar contraste"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Qual é a melhor maneira de ensinar uma pessoa idosa a utilizar um aplicativo novo?",
+        "pergunta": "Por que a exclusão digital pode aumentar o isolamento social?",
         "alternativa": [
-          "Fazer tudo por ela sem explicar as etapas",
-          "Ensinar com paciência, demonstrar cada etapa e permitir que ela pratique no próprio ritmo",
-          "Utilizar termos técnicos sem explicação",
-          "Desistir quando ela cometer um erro"
+          "Porque pode dificultar contatos e participação online",
+          "Porque toda interação digital elimina amizades",
+          "Porque aplicativos impedem encontros presenciais",
+          "Porque a internet funciona apenas para jovens"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual conduta reduz riscos em golpes contra idosos?",
+        "alternativa": [
+          "Confiar em qualquer ligação recebida",
+          "Enviar códigos para confirmar identidade",
+          "Verificar pedidos por canais oficiais independentes",
+          "Instalar aplicativos sugeridos por desconhecidos"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual recurso pode facilitar o uso por pessoas com tremores?",
+        "alternativa": [
+          "Botões menores e mais próximos",
+          "Controles adaptados e opções de comando por voz",
+          "Menus que desaparecem rapidamente",
+          "Exigência de gestos precisos"
         ],
         "resposta correta": "1"
+      },
+      {
+        "pergunta": "Como oficinas digitais devem avaliar o progresso de idosos?",
+        "alternativa": [
+          "Comparando velocidade com usuários experientes",
+          "Exigindo domínio de todas as funções",
+          "Considerando apenas a idade dos participantes",
+          "Observando autonomia e realização de tarefas práticas"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Por que interfaces simples são importantes para idosos?",
+        "alternativa": [
+          "Porque eliminam a necessidade de segurança",
+          "Porque dispensam qualquer tipo de treinamento",
+          "Porque reduzem barreiras de compreensão e navegação",
+          "Porque impedem o acesso a funções avançadas"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual atitude promove autonomia sem comprometer a segurança?",
+        "alternativa": [
+          "Ensinar procedimentos sem solicitar senhas pessoais",
+          "Administrar todas as contas sem consentimento",
+          "Compartilhar dados com toda a família",
+          "Desativar mecanismos de autenticação"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Como evitar a exclusão de idosos em serviços digitais?",
+        "alternativa": [
+          "Encerrar o atendimento presencial",
+          "Oferecer suporte acessível e canais alternativos",
+          "Exigir dispositivos recentes",
+          "Limitar instruções a documentos técnicos"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual método de ensino tende a favorecer a aprendizagem digital?",
+        "alternativa": [
+          "Apresentar muitas funções simultaneamente",
+          "Evitar repetições durante as aulas",
+          "Utilizar apenas explicações abstratas",
+          "Demonstrar tarefas e permitir prática acompanhada"
+        ],
+        "resposta correta": "3"
       }
     ],
     "acessibilidade e inclusão": [
       {
-        "pergunta": "O que é acessibilidade digital?",
+        "pergunta": "Qual princípio orienta o desenho universal?",
         "alternativa": [
-          "Permitir que somente pessoas com equipamentos modernos usem a internet",
-          "Criar sites que funcionem apenas com mouse",
-          "Desenvolver tecnologias e conteúdos que possam ser utilizados por pessoas com diferentes capacidades e necessidades",
-          "Restringir o acesso de pessoas com deficiência aos serviços online"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Qual recurso ajuda uma pessoa cega a utilizar um computador?",
-        "alternativa": [
-          "Diminuir o volume do computador",
-          "Desativar o teclado",
-          "Ocultar os textos da tela",
-          "Utilizar um leitor de tela que transforma textos em áudio ou braille"
-        ],
-        "resposta correta": "3"
-      },
-      {
-        "pergunta": "Como legendas em vídeos ajudam na inclusão digital?",
-        "alternativa": [
-          "Facilitam o acesso ao conteúdo para pessoas surdas e também podem ajudar em ambientes barulhentos",
-          "Impedem que o vídeo seja compreendido",
-          "Substituem todas as imagens de um site",
-          "Tornam obrigatório o uso de fones de ouvido"
+          "Criar soluções utilizáveis por pessoas diversas",
+          "Desenvolver interfaces apenas para especialistas",
+          "Separar usuários conforme suas limitações",
+          "Eliminar opções de personalização"
         ],
         "resposta correta": "0"
       },
       {
-        "pergunta": "Qual característica torna um site mais acessível para pessoas com dificuldades motoras?",
+        "pergunta": "Para que serve um leitor de tela?",
         "alternativa": [
-          "Exigir movimentos rápidos e precisos",
-          "Permitir a navegação por teclado e oferecer controles fáceis de utilizar",
-          "Usar botões muito pequenos",
-          "Impedir o uso de comandos alternativos"
+          "Aumentar a velocidade da conexão",
+          "Traduzir automaticamente todos os idiomas",
+          "Converter informações da interface em fala ou braille",
+          "Corrigir erros de programação"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que o texto alternativo em imagens é importante?",
+        "alternativa": [
+          "Porque reduz o tamanho de todos os arquivos",
+          "Porque substitui a necessidade de legendas",
+          "Porque melhora obrigatoriamente a resolução",
+          "Porque descreve informações visuais para quem não as percebe"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual prática melhora a acessibilidade de formulários?",
+        "alternativa": [
+          "Usar apenas cores para indicar erros",
+          "Associar rótulos aos campos e explicar os erros",
+          "Limitar a navegação ao mouse",
+          "Ocultar instruções antes do preenchimento"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Por que é importante considerar pessoas com deficiência no desenvolvimento de aplicativos?",
+        "pergunta": "O que é contraste adequado em uma interface?",
         "alternativa": [
-          "Para aumentar o preço dos aplicativos",
-          "Para restringir os usuários a poucas funções",
-          "Para permitir que mais pessoas utilizem os serviços com autonomia",
-          "Para eliminar recursos de personalização"
+          "A diferença visual suficiente entre texto e fundo",
+          "A utilização obrigatória de cores brilhantes",
+          "A alternância aleatória de fontes",
+          "A redução da legibilidade dos elementos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual recurso beneficia pessoas surdas em conteúdos audiovisuais?",
+        "alternativa": [
+          "Animações sem descrição",
+          "Alertas exclusivamente sonoros",
+          "Legendas sincronizadas e, quando necessário, interpretação em Libras",
+          "Textos com baixo contraste"
         ],
         "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que testar interfaces com pessoas com deficiência?",
+        "alternativa": [
+          "Para dispensar padrões técnicos",
+          "Para restringir a diversidade de usuários",
+          "Para eliminar toda personalização",
+          "Para identificar barreiras reais de utilização"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual barreira prejudica usuários com limitações motoras?",
+        "alternativa": [
+          "Compatibilidade com leitores de tela",
+          "Controles que exigem movimentos muito precisos",
+          "Navegação completa por teclado",
+          "Botões com áreas de interação adequadas"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "O que significa acessibilidade cognitiva?",
+        "alternativa": [
+          "Aumentar a quantidade de informações por tela",
+          "Usar somente termos técnicos especializados",
+          "Apresentar conteúdos claros e estruturas previsíveis",
+          "Remover instruções e exemplos"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual prática reduz barreiras para usuários neurodivergentes?",
+        "alternativa": [
+          "Permitir configurações e evitar estímulos desnecessários",
+          "Forçar animações constantes",
+          "Exigir interações cronometradas em todas as telas",
+          "Alterar comandos sem aviso"
+        ],
+        "resposta correta": "0"
       }
     ],
     "trabalho e mercado de trabalho": [
       {
-        "pergunta": "Como o acesso à internet pode ajudar uma pessoa desempregada?",
+        "pergunta": "Como a automação pode ampliar desigualdades profissionais?",
         "alternativa": [
-          "Garantindo emprego imediato",
-          "Eliminando a necessidade de experiência",
-          "Impedindo a participação em processos seletivos",
-          "Permitindo pesquisar vagas, preparar currículos e participar de seleções online"
+          "Garantindo a mesma renda a todos",
+          "Eliminando diferenças de qualificação",
+          "Tornando todas as profissões permanentes",
+          "Beneficiando mais quem possui competências valorizadas"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Como a falta de habilidades digitais pode afetar a vida profissional?",
+        "pergunta": "Qual habilidade favorece a adaptação ao mercado digital?",
         "alternativa": [
-          "Pode dificultar o acesso a vagas que exigem conhecimentos tecnológicos",
-          "Garante melhores salários em todas as profissões",
-          "Elimina a necessidade de capacitação",
-          "Facilita automaticamente todas as tarefas de trabalho"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Qual iniciativa pode ajudar trabalhadores de baixa renda a desenvolver habilidades digitais?",
-        "alternativa": [
-          "Cobrar valores elevados por todos os cursos",
-          "Oferecer cursos gratuitos ou acessíveis de informática e ferramentas digitais",
-          "Restringir o acesso a computadores públicos",
-          "Impedir a participação em programas de capacitação"
+          "Memorizar marcas de dispositivos",
+          "Aprender continuamente novas ferramentas",
+          "Evitar qualquer atualização profissional",
+          "Depender de um único programa"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Qual pode ser uma vantagem do trabalho remoto para algumas pessoas?",
+        "pergunta": "Qual é um risco dos algoritmos de recrutamento?",
         "alternativa": [
-          "Eliminar todos os custos de vida",
-          "Garantir que todos tenham internet de alta velocidade",
-          "Reduzir deslocamentos e ampliar oportunidades, quando há condições adequadas de trabalho",
-          "Dispensar todas as qualificações profissionais"
+          "A eliminação de todos os critérios de seleção",
+          "A contratação garantida de candidatos",
+          "A reprodução de vieses presentes nos dados",
+          "A ausência de qualquer processamento automatizado"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "Como empresas podem contribuir para reduzir a desigualdade digital entre seus funcionários?",
+        "pergunta": "Como reduzir barreiras digitais na contratação?",
         "alternativa": [
-          "Exigir que cada funcionário compre todos os equipamentos",
-          "Evitar oferecer treinamentos tecnológicos",
-          "Impedir que iniciantes aprendam novas ferramentas",
-          "Oferecer capacitação, equipamentos adequados e suporte técnico"
+          "Oferecer candidaturas acessíveis e alternativas de inscrição",
+          "Exigir computadores caros dos candidatos",
+          "Aceitar somente currículos em vídeo",
+          "Eliminar o suporte durante as inscrições"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual é um desafio do trabalho remoto em regiões vulneráveis?",
+        "alternativa": [
+          "A impossibilidade de compartilhar documentos",
+          "A eliminação de todas as despesas domésticas",
+          "A ausência de ferramentas de comunicação",
+          "A falta de conexão estável e espaço adequado"
         ],
         "resposta correta": "3"
+      },
+      {
+        "pergunta": "Por que a requalificação profissional é importante?",
+        "alternativa": [
+          "Porque elimina todas as mudanças econômicas",
+          "Porque ajuda trabalhadores a acompanhar novas exigências",
+          "Porque dispensa experiências anteriores",
+          "Porque garante emprego sem seleção"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual medida favorece a inclusão de pessoas com deficiência no trabalho digital?",
+        "alternativa": [
+          "Restringir ferramentas adaptativas",
+          "Aplicar testes incompatíveis com leitores de tela",
+          "Oferecer tecnologia acessível e adaptações razoáveis",
+          "Exigir presença física em todas as funções"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como avaliar a qualidade de um curso profissional digital?",
+        "alternativa": [
+          "Verificando competências adquiridas e aplicação prática",
+          "Contando somente o número de aulas",
+          "Considerando apenas a publicidade",
+          "Medindo exclusivamente a duração do curso"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual problema pode ocorrer em plataformas de trabalho digital?",
+        "alternativa": [
+          "A garantia de contratos estáveis",
+          "A eliminação de qualquer competição",
+          "A inexistência de avaliações automatizadas",
+          "A insegurança de renda e condições de trabalho"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como ampliar oportunidades digitais em comunidades periféricas?",
+        "alternativa": [
+          "Concentrar cursos em bairros distantes",
+          "Combinar capacitação local, equipamentos e conexão",
+          "Limitar inscrições a profissionais experientes",
+          "Priorizar somente treinamentos pagos"
+        ],
+        "resposta correta": "1"
       }
     ],
     "saúde digital": [
       {
-        "pergunta": "O que é telemedicina?",
+        "pergunta": "Qual é uma limitação da telemedicina?",
         "alternativa": [
-          "A prestação de determinados serviços de saúde a distância, utilizando tecnologias de comunicação",
-          "Um aplicativo exclusivo para comprar alimentos",
-          "Um sistema que substitui todos os hospitais",
-          "Um equipamento usado somente para jogos"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Como a internet pode ajudar pessoas que moram longe de centros de saúde?",
-        "alternativa": [
-          "Garantindo que nunca precisem de atendimento presencial",
-          "Possibilitando consultas remotas e acesso a informações confiáveis de saúde, quando disponíveis",
-          "Eliminando a necessidade de profissionais de saúde",
-          "Garantindo acesso imediato a qualquer tratamento"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "Qual barreira pode dificultar o uso de serviços de saúde digitais por famílias de baixa renda?",
-        "alternativa": [
-          "A disponibilidade de atendimento gratuito",
-          "A existência de orientações acessíveis",
-          "A falta de internet, dispositivos adequados ou conhecimentos digitais",
-          "A oferta de informações em linguagem simples"
+          "A impossibilidade de realizar qualquer orientação",
+          "A ausência de comunicação entre profissionais",
+          "A impossibilidade de executar todos os exames remotamente",
+          "A necessidade de conexão apenas em hospitais"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "Qual é uma atitude segura ao pesquisar informações médicas na internet?",
+        "pergunta": "Como a exclusão digital afeta o acesso à saúde?",
         "alternativa": [
-          "Acreditar em qualquer publicação compartilhada",
-          "Interromper um tratamento por recomendação de desconhecidos",
-          "Compartilhar dados médicos pessoais em qualquer site",
-          "Consultar fontes confiáveis e buscar orientação de profissionais de saúde"
+          "Pode dificultar agendamentos e consultas remotas",
+          "Garante atendimento presencial imediato",
+          "Elimina a necessidade de transporte",
+          "Reduz todos os custos de tratamento"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual cuidado é essencial em aplicativos de saúde?",
+        "alternativa": [
+          "Publicar prontuários para facilitar consultas",
+          "Compartilhar senhas com familiares",
+          "Permitir acesso irrestrito aos registros",
+          "Proteger dados sensíveis e controlar permissões"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Como unidades de saúde podem promover a inclusão digital dos pacientes?",
+        "pergunta": "Qual fonte é mais adequada para verificar uma orientação médica?",
         "alternativa": [
-          "Oferecendo orientação para utilizar serviços digitais e alternativas de atendimento para quem precisa",
-          "Atendendo exclusivamente quem possui celular moderno",
-          "Exigindo aplicativos sem fornecer orientação",
-          "Recusando pacientes que não saibam utilizar a internet"
+          "Uma mensagem anônima compartilhada",
+          "Um profissional habilitado ou uma instituição de saúde confiável",
+          "Um anúncio sem referências",
+          "Um comentário sem comprovação"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Por que sistemas de saúde devem oferecer acessibilidade digital?",
+        "alternativa": [
+          "Para reduzir os canais de atendimento",
+          "Para exigir aparelhos específicos",
+          "Para permitir o uso por pacientes com diferentes necessidades",
+          "Para substituir todas as consultas presenciais"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual medida pode reduzir barreiras no agendamento online?",
+        "alternativa": [
+          "Oferecer interfaces simples e apoio aos usuários",
+          "Exigir conexão de alta velocidade",
+          "Eliminar instruções de preenchimento",
+          "Disponibilizar somente formulários complexos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual risco existe em dispositivos de saúde conectados?",
+        "alternativa": [
+          "A eliminação de todos os erros clínicos",
+          "A garantia de dados sempre corretos",
+          "A ausência de comunicação entre sistemas",
+          "A exposição de informações por falhas de segurança"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Por que a alfabetização digital importa na saúde?",
+        "alternativa": [
+          "Porque substitui a formação clínica",
+          "Porque ajuda a utilizar serviços e avaliar informações",
+          "Porque elimina a necessidade de privacidade",
+          "Porque garante diagnósticos automáticos precisos"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Como evitar que a saúde digital exclua populações vulneráveis?",
+        "alternativa": [
+          "Encerrar o atendimento por telefone",
+          "Exigir aplicativos em todos os procedimentos",
+          "Manter alternativas presenciais e suporte acessível",
+          "Limitar serviços digitais às áreas urbanas"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual princípio deve orientar o uso de inteligência artificial na saúde?",
+        "alternativa": [
+          "Supervisão adequada, transparência e avaliação de riscos",
+          "Substituição automática de todos os profissionais",
+          "Uso irrestrito de dados pessoais",
+          "Eliminação da revisão de resultados"
         ],
         "resposta correta": "0"
       }
     ],
     "cidadania e serviços públicos": [
       {
-        "pergunta": "Como os serviços públicos digitais podem beneficiar a população?",
+        "pergunta": "Qual é um risco da digitalização exclusiva de serviços públicos?",
         "alternativa": [
-          "Eliminando todos os direitos presenciais",
-          "Facilitando o acesso a informações, solicitações e serviços públicos",
-          "Impedindo a participação dos cidadãos",
-          "Restringindo o acesso a pessoas com renda elevada"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "Qual é um risco de disponibilizar serviços públicos somente pela internet?",
-        "alternativa": [
-          "A ampliação automática do acesso para todos",
-          "A eliminação de todas as desigualdades",
-          "A exclusão de pessoas sem conexão ou sem habilidades digitais",
-          "A garantia de atendimento para toda a população"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Como uma pessoa pode se preparar para acessar um serviço público digital com segurança?",
-        "alternativa": [
-          "Compartilhando sua senha com desconhecidos",
-          "Usando qualquer site que solicite seus documentos",
-          "Publicando seus dados pessoais nas redes sociais",
-          "Verificando se está no canal oficial e protegendo suas credenciais"
+          "O aumento automático da participação",
+          "A redução de todas as desigualdades",
+          "A simplificação garantida para todos",
+          "A exclusão de cidadãos sem acesso ou habilidades"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Qual medida ajuda cidadãos sem internet a acessar serviços públicos?",
+        "pergunta": "Qual medida favorece o acesso igualitário a serviços digitais?",
         "alternativa": [
-          "Manter atendimento presencial ou assistido e disponibilizar pontos de acesso público",
-          "Encerrar todos os canais de atendimento presencial",
-          "Exigir que cada cidadão compre um computador",
-          "Impedir que funcionários orientem a população"
+          "Exigir dispositivos recentes",
+          "Oferecer acessibilidade, suporte e canais alternativos",
+          "Encerrar o atendimento presencial",
+          "Limitar o acesso a usuários experientes"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "O que caracteriza transparência pública digital?",
+        "alternativa": [
+          "A divulgação irrestrita de dados pessoais",
+          "A publicação de informações sem contexto",
+          "A disponibilização acessível de informações públicas",
+          "A restrição de consultas aos cidadãos"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que a proteção de dados importa em serviços governamentais?",
+        "alternativa": [
+          "Porque reduz riscos de exposição e uso indevido",
+          "Porque impede toda prestação de serviços",
+          "Porque elimina a necessidade de transparência",
+          "Porque torna públicos todos os registros"
         ],
         "resposta correta": "0"
       },
       {
-        "pergunta": "Como a internet pode favorecer a participação cidadã?",
+        "pergunta": "Qual exemplo representa participação cidadã digital?",
         "alternativa": [
-          "Impedindo o acesso a informações públicas",
-          "Permitindo acompanhar políticas públicas, consultar informações e participar de consultas online",
-          "Substituindo todas as formas de participação comunitária",
-          "Garantindo que apenas especialistas opinem"
+          "Compartilhar senhas de serviços públicos",
+          "Acessar somente anúncios oficiais",
+          "Consultar apenas conteúdos privados",
+          "Participar de consultas e audiências públicas online"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual é a função da identidade digital governamental?",
+        "alternativa": [
+          "Substituir todos os documentos físicos obrigatoriamente",
+          "Permitir a identificação e o acesso a serviços compatíveis",
+          "Garantir anonimato em qualquer transação",
+          "Eliminar mecanismos de autenticação"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Como evitar exclusão em cadastros públicos online?",
+        "alternativa": [
+          "Usar exclusivamente linguagem técnica",
+          "Exigir computadores de alto desempenho",
+          "Simplificar formulários e disponibilizar orientação",
+          "Remover canais de suporte"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Por que serviços digitais devem ser avaliados periodicamente?",
+        "alternativa": [
+          "Para identificar falhas, barreiras e necessidades dos usuários",
+          "Para eliminar todas as atualizações",
+          "Para impedir sugestões da população",
+          "Para reduzir a transparência institucional"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual prática melhora a acessibilidade de portais governamentais?",
+        "alternativa": [
+          "Usar imagens sem descrição",
+          "Impedir navegação por teclado",
+          "Apresentar erros sem explicação",
+          "Adotar padrões de acessibilidade e testes com usuários"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual alternativa protege quem não consegue usar serviços online?",
+        "alternativa": [
+          "Obrigar o uso de aplicativos privados",
+          "Disponibilizar atendimento presencial ou assistido",
+          "Suspender solicitações sem acesso digital",
+          "Exigir ajuda de terceiros em todos os casos"
         ],
         "resposta correta": "1"
       }
     ],
     "segurança e privacidade digital": [
       {
-        "pergunta": "O que é uma senha segura?",
+        "pergunta": "O que caracteriza um ataque de phishing?",
         "alternativa": [
-          "Uma senha igual ao nome do usuário",
-          "Uma senha compartilhada com amigos",
-          "Uma combinação difícil de adivinhar, exclusiva para a conta e, quando possível, longa",
-          "Uma sequência simples como 123456"
+          "A instalação legítima de atualizações",
+          "A criação de cópias de segurança",
+          "A tentativa de obter dados por mensagens enganosas",
+          "A configuração de redes locais"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "O que uma pessoa deve fazer ao receber uma mensagem suspeita solicitando dados bancários?",
+        "pergunta": "Qual é a principal função da autenticação multifator?",
         "alternativa": [
-          "Enviar os dados imediatamente",
-          "Compartilhar a mensagem sem verificar",
-          "Informar sua senha para confirmar a identidade",
-          "Não fornecer os dados e verificar a solicitação por um canal oficial"
-        ],
-        "resposta correta": "3"
-      },
-      {
-        "pergunta": "Por que é importante proteger os dados pessoais na internet?",
-        "alternativa": [
-          "Para reduzir riscos de fraudes, golpes e uso indevido das informações",
-          "Para impedir o uso de qualquer serviço digital",
-          "Para tornar todas as contas públicas",
-          "Para facilitar o compartilhamento de senhas"
+          "Adicionar etapas de verificação à identificação",
+          "Eliminar todas as senhas automaticamente",
+          "Garantir sigilo absoluto dos arquivos",
+          "Impedir qualquer falha de sistema"
         ],
         "resposta correta": "0"
       },
       {
-        "pergunta": "Qual é uma prática recomendada ao utilizar Wi-Fi público?",
+        "pergunta": "O que é engenharia social?",
         "alternativa": [
-          "Realizar qualquer operação sem verificar a segurança",
-          "Evitar operações sensíveis em redes não confiáveis e utilizar conexões seguras",
-          "Desativar todas as atualizações de segurança",
-          "Compartilhar arquivos pessoais com qualquer usuário da rede"
+          "Um método de ampliar a banda larga",
+          "Uma técnica de compactação de arquivos",
+          "Um sistema de atualização de aplicativos",
+          "A manipulação de pessoas para obter informações ou acesso"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual prática ajuda a proteger contas online?",
+        "alternativa": [
+          "Reutilizar a mesma senha em todos os serviços",
+          "Usar senhas exclusivas e autenticação multifator",
+          "Enviar códigos de acesso por mensagens públicas",
+          "Desativar alertas de segurança"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Como ajudar uma pessoa com pouca experiência digital a se proteger de golpes?",
+        "pergunta": "Por que atualizações de segurança são importantes?",
         "alternativa": [
-          "Dizer que todos os links recebidos são seguros",
-          "Incentivar o compartilhamento de códigos de autenticação",
-          "Ensinar a reconhecer mensagens suspeitas e a confirmar informações por canais oficiais",
-          "Orientar a instalar aplicativos enviados por desconhecidos"
+          "Porque eliminam qualquer risco futuro",
+          "Porque impedem todos os erros humanos",
+          "Porque corrigem vulnerabilidades conhecidas",
+          "Porque tornam desnecessárias as senhas"
         ],
         "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual é um princípio de proteção de dados pessoais?",
+        "alternativa": [
+          "Coletar apenas os dados necessários para a finalidade",
+          "Armazenar informações sem prazo definido",
+          "Compartilhar dados com qualquer parceiro",
+          "Publicar registros para facilitar pesquisas"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual é um risco de utilizar redes Wi-Fi públicas inseguras?",
+        "alternativa": [
+          "A melhoria automática da privacidade",
+          "A eliminação de programas maliciosos",
+          "A proteção garantida de todas as contas",
+          "A interceptação de informações em certas condições"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "O que é uma cópia de segurança?",
+        "alternativa": [
+          "Uma senha temporária",
+          "Uma cópia dos dados para recuperação posterior",
+          "Um bloqueio de conexão",
+          "Um programa de publicidade"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Como verificar um possível golpe por mensagem?",
+        "alternativa": [
+          "Responder com os dados solicitados",
+          "Clicar no link para testar sua validade",
+          "Confirmar a solicitação por um canal oficial independente",
+          "Encaminhar a mensagem para todos os contatos"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual é uma medida adequada após suspeita de invasão de conta?",
+        "alternativa": [
+          "Alterar credenciais por um canal seguro e revisar sessões",
+          "Manter a senha comprometida",
+          "Compartilhar o código de recuperação",
+          "Desativar todos os mecanismos de proteção"
+        ],
+        "resposta correta": "0"
       }
     ],
     "desigualdade social e regional": [
       {
-        "pergunta": "O que é desigualdade digital?",
+        "pergunta": "O que melhor descreve a desigualdade digital territorial?",
         "alternativa": [
-          "A diferença entre marcas de computadores",
-          "A escolha de aplicativos diferentes",
-          "A existência de várias redes sociais",
-          "A diferença no acesso às tecnologias, na qualidade da conexão e nas habilidades para utilizá-las"
+          "A diferença entre sistemas operacionais",
+          "A variedade de dispositivos disponíveis",
+          "A existência de idiomas diferentes",
+          "A disparidade de acesso entre regiões"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Por que moradores de algumas áreas rurais enfrentam dificuldades de acesso à internet?",
+        "pergunta": "Por que a renda influencia a inclusão digital?",
         "alternativa": [
-          "Porque pode faltar infraestrutura de telecomunicações ou haver custos elevados para instalar e manter a conexão",
-          "Porque a internet só funciona em grandes cidades",
-          "Porque todas as áreas rurais proíbem computadores",
-          "Porque moradores rurais não podem utilizar tecnologias"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Como o custo dos equipamentos eletrônicos pode aumentar a desigualdade social?",
-        "alternativa": [
-          "Garantindo que todas as famílias tenham os mesmos recursos",
-          "Impedindo que pessoas com menor renda adquiram dispositivos necessários para estudar e trabalhar",
-          "Reduzindo automaticamente o preço da internet",
-          "Eliminando as diferenças de oportunidades"
+          "Porque determina todas as habilidades individuais",
+          "Porque afeta a capacidade de pagar conexão e equipamentos",
+          "Porque impede qualquer uso de celular",
+          "Porque elimina diferenças entre regiões"
         ],
         "resposta correta": "1"
       },
       {
-        "pergunta": "Qual política pública pode ajudar a diminuir a desigualdade digital?",
+        "pergunta": "O que caracteriza a desigualdade na qualidade da conexão?",
         "alternativa": [
-          "Cobrar mais caro pela conexão em regiões pobres",
-          "Reduzir o número de bibliotecas públicas",
-          "Ampliar a conectividade, oferecer equipamentos e promover capacitação digital",
-          "Limitar o acesso à internet nas escolas"
+          "A diferença de idiomas nos sites",
+          "A escolha de aplicativos pessoais",
+          "A variação de velocidade, estabilidade e disponibilidade",
+          "A quantidade de arquivos locais"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "Por que oferecer apenas acesso à internet não resolve toda a desigualdade digital?",
+        "pergunta": "Qual política pode reduzir barreiras digitais em áreas pobres?",
         "alternativa": [
-          "Porque a internet não pode ser usada para estudar",
-          "Porque os equipamentos nunca ajudam na aprendizagem",
-          "Porque somente empresas podem utilizar ferramentas digitais",
-          "Porque também são necessários equipamentos adequados, habilidades, acessibilidade e condições de uso"
+          "Subsidiar conexão e ampliar infraestrutura e capacitação",
+          "Elevar tarifas em regiões periféricas",
+          "Reduzir laboratórios comunitários",
+          "Restringir redes públicas"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Por que a conectividade não elimina sozinha a desigualdade?",
+        "alternativa": [
+          "Porque a internet não permite estudar",
+          "Porque equipamentos nunca melhoram oportunidades",
+          "Porque todas as pessoas têm habilidades iguais",
+          "Porque também importam renda, formação e acessibilidade"
         ],
         "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como a falta de equipamentos pode afetar estudantes?",
+        "alternativa": [
+          "Garantindo igualdade de aprendizagem",
+          "Limitando pesquisas, atividades e participação online",
+          "Eliminando diferenças escolares",
+          "Reduzindo a necessidade de materiais"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual indicador revela uma barreira de conectividade?",
+        "alternativa": [
+          "A quantidade de aplicativos instalados",
+          "A marca dos computadores escolares",
+          "A proporção de domicílios sem acesso adequado",
+          "O número de redes sociais existentes"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como projetos comunitários podem reduzir desigualdades regionais?",
+        "alternativa": [
+          "Oferecendo conexão, equipamentos e formação local",
+          "Concentrando recursos nas capitais",
+          "Exigindo dispositivos próprios",
+          "Limitando cursos a usuários avançados"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual é um efeito da concentração de infraestrutura digital?",
+        "alternativa": [
+          "A distribuição automática de oportunidades",
+          "A redução garantida dos preços",
+          "O desaparecimento das barreiras geográficas",
+          "A ampliação das diferenças entre territórios"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como avaliar a inclusão digital de um grupo vulnerável?",
+        "alternativa": [
+          "Contando somente celulares vendidos",
+          "Analisando acesso, competências e uso significativo",
+          "Medindo apenas a velocidade máxima contratada",
+          "Contando somente o número de aplicativos"
+        ],
+        "resposta correta": "1"
       }
     ],
     "educação financeira digital": [
       {
-        "pergunta": "O que é educação financeira digital?",
+        "pergunta": "Qual prática caracteriza um orçamento financeiro eficaz?",
         "alternativa": [
-          "Aprender a administrar o dinheiro e utilizar serviços financeiros digitais de forma consciente e segura",
-          "Comprar produtos pela internet sem planejamento",
-          "Compartilhar dados bancários nas redes sociais",
-          "Investir todo o dinheiro em uma única aplicação"
-        ],
-        "resposta correta": "0"
-      },
-      {
-        "pergunta": "Qual é uma vantagem de utilizar aplicativos bancários com segurança?",
-        "alternativa": [
-          "Eliminar todos os riscos financeiros",
-          "Consultar saldos, pagar contas e acompanhar movimentações sem precisar sempre ir a uma agência",
-          "Garantir que todas as transações sejam gratuitas",
-          "Dispensar a proteção da conta"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "O que uma pessoa deve fazer ao receber uma oferta de empréstimo online que exige um pagamento antecipado suspeito?",
-        "alternativa": [
-          "Pagar imediatamente sem verificar",
-          "Enviar todos os documentos por mensagem",
-          "Verificar a instituição e desconfiar de cobranças antecipadas suspeitas antes de prosseguir",
-          "Compartilhar a oferta com todos os contatos"
+          "Ignorar despesas pequenas",
+          "Contratar crédito para todas as compras",
+          "Registrar receitas, despesas e metas financeiras",
+          "Avaliar gastos apenas uma vez por ano"
         ],
         "resposta correta": "2"
       },
       {
-        "pergunta": "Como a falta de acesso a serviços financeiros digitais pode afetar uma pessoa?",
+        "pergunta": "Qual é uma vantagem dos alertas bancários?",
         "alternativa": [
-          "Garantindo acesso automático a crédito barato",
-          "Eliminando todas as tarifas bancárias",
-          "Aumentando obrigatoriamente sua renda",
-          "Dificultando o acesso a determinadas operações e serviços financeiros online"
+          "Ajudar a identificar movimentações inesperadas",
+          "Garantir a recuperação de qualquer fraude",
+          "Eliminar a necessidade de revisar extratos",
+          "Impedir todos os pagamentos indevidos"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "O que deve ser analisado antes de contratar crédito digital?",
+        "alternativa": [
+          "Apenas a cor do aplicativo",
+          "Somente o valor da primeira parcela",
+          "A quantidade de anúncios da instituição",
+          "O custo total, os juros e as condições contratuais"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Qual atitude ajuda uma família a manter o controle das finanças ao utilizar aplicativos?",
+        "pergunta": "Por que o custo efetivo total é relevante em empréstimos?",
         "alternativa": [
-          "Acompanhar receitas e despesas, verificar cobranças e proteger os dados bancários",
-          "Ignorar o extrato bancário",
-          "Compartilhar senhas com desconhecidos",
-          "Contratar empréstimos sem analisar as condições"
+          "Porque indica somente o valor liberado",
+          "Porque reúne juros, tarifas e outros custos aplicáveis",
+          "Porque garante aprovação do crédito",
+          "Porque elimina a cobrança de encargos"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual comportamento reduz riscos em pagamentos digitais?",
+        "alternativa": [
+          "Compartilhar senhas com vendedores",
+          "Aprovar solicitações sem conferir valores",
+          "Conferir destinatário, valor e confirmação da transação",
+          "Guardar códigos bancários em mensagens públicas"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual é um benefício de acompanhar gastos em um aplicativo?",
+        "alternativa": [
+          "Identificar padrões e ajustar o orçamento",
+          "Garantir rendimento positivo",
+          "Eliminar todas as despesas fixas",
+          "Dispensar o planejamento financeiro"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Como evitar fraudes em falsas oportunidades de investimento?",
+        "alternativa": [
+          "Confiar em retornos garantidos muito elevados",
+          "Transferir dinheiro por pressão de tempo",
+          "Ignorar a identidade da empresa",
+          "Verificar a instituição e desconfiar de promessas irreais"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "O que é inclusão financeira digital?",
+        "alternativa": [
+          "A obrigação de utilizar apenas bancos digitais",
+          "O acesso e uso adequado de serviços financeiros digitais",
+          "A eliminação de todas as tarifas bancárias",
+          "A oferta automática de crédito para todos"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Por que pessoas com baixa alfabetização digital podem ser mais vulneráveis a golpes?",
+        "alternativa": [
+          "Porque não podem possuir contas bancárias",
+          "Porque todos os aplicativos são fraudulentos",
+          "Porque podem ter dificuldade para identificar sinais de fraude",
+          "Porque operações digitais dispensam verificação"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Qual atitude melhora a segurança de uma conta financeira?",
+        "alternativa": [
+          "Ativar alertas e usar autenticação adicional",
+          "Reutilizar senhas em diversos serviços",
+          "Compartilhar códigos de confirmação",
+          "Desativar notificações de movimentações"
         ],
         "resposta correta": "0"
       }
     ],
     "tecnologia e comunidade": [
       {
-        "pergunta": "O que é um telecentro comunitário?",
+        "pergunta": "Qual é a função social de um telecentro?",
         "alternativa": [
-          "Uma loja que vende exclusivamente celulares",
-          "Um espaço que oferece acesso a computadores, internet e, em muitos casos, capacitação digital",
-          "Um serviço destinado somente a empresas",
-          "Um local que impede o acesso gratuito à informação"
-        ],
-        "resposta correta": "1"
-      },
-      {
-        "pergunta": "Como um projeto comunitário de inclusão digital pode beneficiar pessoas de baixa renda?",
-        "alternativa": [
-          "Impedindo o uso de tecnologias",
-          "Substituindo todas as escolas da região",
-          "Oferecendo acesso a equipamentos, internet e oportunidades de aprendizagem",
-          "Cobrando valores inacessíveis pelos cursos"
-        ],
-        "resposta correta": "2"
-      },
-      {
-        "pergunta": "Como a tecnologia pode ajudar uma comunidade a divulgar iniciativas locais?",
-        "alternativa": [
-          "Impedindo a comunicação entre moradores",
-          "Restringindo informações a um pequeno grupo",
-          "Eliminando a necessidade de participação comunitária",
-          "Divulgando eventos, campanhas, serviços e oportunidades por canais digitais"
+          "Vender equipamentos para empresas",
+          "Substituir todas as escolas públicas",
+          "Restringir o acesso à informação",
+          "Oferecer acesso tecnológico e capacitação à comunidade"
         ],
         "resposta correta": "3"
       },
       {
-        "pergunta": "Qual iniciativa pode ajudar a ampliar o acesso a computadores em uma comunidade?",
+        "pergunta": "Por que consultar moradores antes de criar um projeto digital?",
         "alternativa": [
-          "Organizar a doação, o recondicionamento e o empréstimo de equipamentos em boas condições",
-          "Descartar equipamentos que ainda podem ser utilizados",
-          "Impedir o compartilhamento de recursos tecnológicos",
-          "Restringir computadores a pessoas com renda elevada"
+          "Para evitar avaliações futuras",
+          "Para identificar necessidades e barreiras locais",
+          "Para limitar o número de participantes",
+          "Para priorizar somente usuários experientes"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual é uma vantagem do recondicionamento de computadores?",
+        "alternativa": [
+          "Eliminar a necessidade de manutenção",
+          "Garantir equipamentos novos",
+          "Ampliar o acesso e reduzir o descarte eletrônico",
+          "Dispensar cuidados de segurança"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como uma rede comunitária pode fortalecer iniciativas locais?",
+        "alternativa": [
+          "Facilitando comunicação, divulgação e cooperação",
+          "Impedindo o compartilhamento de informações",
+          "Substituindo todas as instituições públicas",
+          "Restringindo o acesso a organizações privadas"
         ],
         "resposta correta": "0"
       },
       {
-        "pergunta": "Por que é importante ouvir os moradores antes de criar um projeto de inclusão digital?",
+        "pergunta": "Qual prática favorece a sustentabilidade de um telecentro?",
         "alternativa": [
-          "Para impedir mudanças no projeto",
-          "Para identificar as necessidades locais e desenvolver soluções acessíveis e adequadas à comunidade",
-          "Para atender somente quem já domina a tecnologia",
-          "Para evitar a participação dos grupos mais vulneráveis"
+          "Depender apenas de equipamentos doados sem manutenção",
+          "Evitar parcerias com instituições locais",
+          "Limitar o treinamento de voluntários",
+          "Planejar recursos, manutenção e parcerias contínuas"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Como medir o impacto de um projeto de inclusão digital?",
+        "alternativa": [
+          "Contando apenas publicações nas redes",
+          "Avaliando habilidades, participação e resultados alcançados",
+          "Medindo exclusivamente o tamanho do espaço",
+          "Contando somente os equipamentos comprados"
+        ],
+        "resposta correta": "1"
+      },
+      {
+        "pergunta": "Qual cuidado é importante ao doar computadores usados?",
+        "alternativa": [
+          "Manter todos os dados dos antigos usuários",
+          "Dispensar testes de funcionamento",
+          "Apagar dados pessoais e verificar a segurança dos equipamentos",
+          "Entregar aparelhos sem cabos ou orientação"
+        ],
+        "resposta correta": "2"
+      },
+      {
+        "pergunta": "Como a tecnologia pode apoiar associações comunitárias?",
+        "alternativa": [
+          "Organizando comunicação, inscrições e divulgação de atividades",
+          "Eliminando a participação presencial",
+          "Impedindo a colaboração entre moradores",
+          "Substituindo todas as decisões coletivas"
+        ],
+        "resposta correta": "0"
+      },
+      {
+        "pergunta": "Qual risco existe quando projetos comunitários não consideram acessibilidade?",
+        "alternativa": [
+          "A redução automática dos custos",
+          "A melhoria garantida da participação",
+          "A eliminação das barreiras físicas",
+          "A exclusão de pessoas com diferentes necessidades"
+        ],
+        "resposta correta": "3"
+      },
+      {
+        "pergunta": "Qual parceria pode fortalecer um projeto de inclusão digital?",
+        "alternativa": [
+          "Uma parceria sem objetivos definidos",
+          "A cooperação entre escolas, poder público e organizações locais",
+          "A concentração das decisões em fornecedores",
+          "A exclusão dos próprios moradores"
         ],
         "resposta correta": "1"
       }

@@ -1,0 +1,76 @@
+.streak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 18px auto 8px;
+    padding: 10px 16px;
+    width: min(190px, 90%);
+    border: 1px solid var(--azul-borda);
+    border-radius: 14px;
+    background: linear-gradient(145deg, rgb(20 49 67 / 88%), rgb(7 22 34 / 88%));
+    box-shadow: 0 8px 20px rgb(0 0 0 / 24%);
+}
+
+.streak_visual {
+    position: relative;
+    display: grid;
+    width: 42px;
+    height: 48px;
+    place-items: center;
+    line-height: 1;
+    filter: drop-shadow(0 0 7px rgb(255 130 24 / 60%));
+    animation: chama-pulsando 1.3s ease-in-out infinite alternate;
+}
+
+.streak_visual img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.streak_visual::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 22px;
+    height: 7px;
+    border-radius: 50%;
+    background: rgb(255 150 38 / 40%);
+    filter: blur(4px);
+}
+
+.streak_dados {
+    display: grid;
+    gap: 2px;
+}
+
+.streak_valor {
+    color: var(--branco);
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.streak_rotulo,
+.streak_respostas {
+    color: var(--cinza);
+    font-size: .72rem;
+    font-weight: 700;
+}
+
+@keyframes chama-pulsando {
+    from {
+        transform: translateY(2px) scale(.96) rotate(-2deg);
+    }
+
+    to {
+        transform: translateY(-2px) scale(1.05) rotate(2deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .streak_visual {
+        animation: none;
+    }
+}

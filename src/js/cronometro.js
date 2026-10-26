@@ -17,10 +17,13 @@ function formatarTempo(tempoEmMilissegundos) {
 
 function atualizarTela() {
   const elemento = document.querySelector('#tempo');
-  if (!elemento) return;
-
   const tempoAtual = inicio === null ? pausadoEm : pausadoEm + performance.now() - inicio;
-  elemento.textContent = formatarTempo(tempoAtual);
+  if (elemento) elemento.textContent = formatarTempo(tempoAtual);
+  document.dispatchEvent(
+    new CustomEvent('memory:timer-tick', {
+      detail: { tempo: tempoAtual }
+    })
+  );
 }
 
 function iniciar() {
@@ -73,6 +76,11 @@ export function reiniciarCronometro() {
 
   const elemento = document.querySelector('#tempo');
   if (elemento) elemento.textContent = '00:00:000';
+  document.dispatchEvent(
+    new CustomEvent('memory:timer-tick', {
+      detail: { tempo: 0 }
+    })
+  );
 }
 
 export function obterTempoAtual() {

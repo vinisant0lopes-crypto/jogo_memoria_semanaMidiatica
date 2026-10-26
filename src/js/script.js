@@ -16,6 +16,7 @@ import { iniciarPlacar } from './placar.js';
 import { iniciarQuiz, reiniciarQuiz } from './quiz.js';
 import { iniciarLogin } from './login.js';
 import { iniciarPopups } from './popups.js';
+import { iniciarStreak, reiniciarStreak } from './streak.js';
 
 // Chamada da função para gerar as cartas no container ao carregar o jogo
 gerarCartas();
@@ -27,6 +28,7 @@ iniciarPlacar();
 iniciarQuiz();
 iniciarLogin();
 iniciarPopups();
+iniciarStreak();
 
 document.querySelector('#pausar-jogo')?.addEventListener('click', (evento) => {
   const botao = evento.currentTarget;
@@ -42,6 +44,7 @@ document.querySelector('#reiniciar-jogo')?.addEventListener('click', () => {
   reiniciarCronometro();
   reiniciarContabilizacao();
   reiniciarQuiz();
+  reiniciarStreak();
   gerarCartas();
 
   const botaoPausar = document.querySelector('#pausar-jogo');

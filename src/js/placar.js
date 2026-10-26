@@ -1,9 +1,16 @@
 import { obterTempoAtual } from './cronometro.js';
 import { obterEstatisticasAtuais } from './contabilizar_pontos.js';
 import { obterUsuarioAtual } from './login.js';
+import { obterDificuldadeAtual } from './dificuldade.js';
 
 const CHAVE_PLACAR = 'jogo-memoria-placar';
-let filtroAtual = 'tempo';
+const nivelPorDificuldade = {
+  facil: 1,
+  medio: 2,
+  dificil: 3,
+  edificil: 4
+};
+let filtroAtual = 'pontos';
 let partidaPendente = null;
 
 function carregarPartidas() {
@@ -30,7 +37,7 @@ function ordenarPartidas(partidas) {
     if (filtroAtual === 'tentativas') return a.tentativas - b.tentativas;
     if (filtroAtual === 'recente') return b.adicionado - a.adicionado;
     if (filtroAtual === 'antigo') return a.adicionado - b.adicionado;
-    return a.tempo - b.tempo;
+    return b.pontos - a.pontos;
   });
 }
 
@@ -42,21 +49,55 @@ function formatarTempo(tempo) {
   return `${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}:${String(restante).padStart(3, '0')}`;
 }
 
+function obterNivel(partida) {
+  if (Number.isInteger(partida.nivelDificuldade)) {
+    return Math.max(1, Math.min(4, partida.nivelDificuldade));
+  }
+  return 1;
+}
+
+function filtrarPartidas(partidas) {
+  const prefixo = 'dificuldade-';
+  if (!filtroAtual.startsWith(prefixo)) return partidas;
+
+  const nivelSelecionado = Number(filtroAtual.slice(prefixo.length));
+  return partidas.filter((partida) => obterNivel(partida) === nivelSelecionado);
+}
+
 function renderizar() {
   const lista = document.querySelector('#placar-lista');
   const vazio = document.querySelector('#placar-vazio');
   if (!lista || !vazio) return;
 
   lista.innerHTML = '';
-  const partidas = ordenarPartidas(carregarPartidas());
+  const partidas = ordenarPartidas(filtrarPartidas(carregarPartidas()));
   vazio.hidden = partidas.length > 0;
 
   partidas.forEach((partida, indice) => {
     const linha = document.createElement('tr');
-    [indice + 1, partida.nome, partida.pontos, formatarTempo(partida.tempo), partida.tentativas]
-      .forEach((valor) => {
+    [indice + 1, null, partida.pontos, formatarTempo(partida.tempo), partida.tentativas]
+      .forEach((valor, coluna) => {
         const celula = document.createElement('td');
-        celula.textContent = String(valor);
+        if (coluna === 1) {
+          const nivel = obterNivel(partida);
+          const caveiras = document.createElement('span');
+          caveiras.className = 'placar_dificuldade';
+          caveiras.setAttribute(
+            'aria-label',
+            `Nível de dificuldade ${nivel} de 4`
+          );
+          for (let indiceCaveira = 0; indiceCaveira < nivel; indiceCaveira += 1) {
+            const caveira = document.createElement('img');
+            caveira.src = './src/image/icons/skull.png';
+            caveira.alt = '';
+            caveira.setAttribute('aria-hidden', 'true');
+            caveiras.appendChild(caveira);
+          }
+          caveiras.appendChild(document.createTextNode(' '));
+          celula.append(caveiras, document.createTextNode(partida.nome));
+        } else {
+          celula.textContent = String(valor);
+        }
         linha.appendChild(celula);
       });
     lista.appendChild(linha);
@@ -80,6 +121,9 @@ export function registrarPartida(usuario) {
     pontos: estatisticas.pontos,
     tentativas: estatisticas.tentativas,
     tempo: estatisticas.tempo,
+    nivelDificuldade:
+      estatisticas.nivelDificuldade ||
+      nivelPorDificuldade[obterDificuldadeAtual()],
     adicionado: Date.now()
   };
   const indice = partidas.findIndex((item) => item.usuario === partida.usuario);
@@ -135,7 +179,8 @@ export function iniciarPlacar() {
       partidaPendente = {
         pontos: obterEstatisticasAtuais().pontos,
         tentativas: obterEstatisticasAtuais().tentativas,
-        tempo: obterTempoAtual()
+        tempo: obterTempoAtual(),
+        nivelDificuldade: nivelPorDificuldade[obterDificuldadeAtual()]
       };
     }
   });

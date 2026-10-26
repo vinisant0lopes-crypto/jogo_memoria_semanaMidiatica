@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jogo da Memória | Semana Midiática</title>
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="./src/style/cartas.css">
     <link rel="stylesheet" href="./src/style/button.css">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./src/style/quiz.css">
     <link rel="stylesheet" href="./src/style/login.css">
     <link rel="stylesheet" href="./src/style/popups.css">
+    <link rel="stylesheet" href="./src/style/streak.css">
 </head>
     <body>
 
@@ -46,6 +47,18 @@
                     <br>
                     <div class="avisos">
                         <p>lembre-se de salvar seus dados no placar</p>
+                    </div>
+                    <div class="streak" aria-label="Multiplicador de streak">
+                        <div class="streak_visual" aria-hidden="true">
+                            <img src="./src/image/icons/streak.gif" alt="">
+                        </div>
+                        <div class="streak_dados">
+                            <span class="streak_rotulo">STREAK</span>
+                            <strong class="streak_valor" id="streak-valor">1.00x</strong>
+                            <span class="streak_respostas">
+                                Respostas corretas: <span id="streak-respostas">0</span>
+                            </span>
+                        </div>
                     </div>
                 </div>
 
@@ -112,6 +125,10 @@
                         <button type="button" data-filtro="tentativas">Total de tentativas</button>
                         <button type="button" data-filtro="recente">Recente</button>
                         <button type="button" data-filtro="antigo">Antigo</button>
+                        <button type="button" data-filtro="dificuldade-1">Fácil</button>
+                        <button type="button" data-filtro="dificuldade-2">Médio</button>
+                        <button type="button" data-filtro="dificuldade-3">Difícil</button>
+                        <button type="button" data-filtro="dificuldade-4">Extremamente difícil</button>
                     </div>
 
                 </div>

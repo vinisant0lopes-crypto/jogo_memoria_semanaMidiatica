@@ -1,5 +1,16 @@
-/* Css voltado para manipulação de containers apenas */
+/* Estrutura e identidade visual do jogo. */
 
+:root {
+    --azul-noite: #081522;
+    --azul-painel: #0f2230;
+    --azul-borda: #29485d;
+    --azul-acao: #35a9e8;
+    --azul-acao-escuro: #1478b5;
+    --branco: #f7fbff;
+    --cinza: #a9bac5;
+    --cinza-escuro: #1b303e;
+    --sombra: 0 18px 50px rgb(0 0 0 / 38%);
+}
 
 *, html, body {
     margin: 0;
@@ -7,43 +18,89 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+    background: var(--azul-noite);
+}
+
+body {
+    min-height: 100vh;
+    height: 100vh;
+    overflow: hidden;
+    color: var(--branco);
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    background:
+        radial-gradient(circle at 20% 12%, rgb(33 91 123 / 22%), transparent 25rem),
+        radial-gradient(circle at 84% 90%, rgb(18 66 96 / 25%), transparent 28rem),
+        var(--azul-noite);
+    position: relative;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    inset: -100% 0 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image:
+        radial-gradient(circle, rgb(255 255 255 / 80%) 0 1px, transparent 1.5px),
+        radial-gradient(circle, rgb(53 169 232 / 70%) 0 1px, transparent 1.5px),
+        linear-gradient(110deg, transparent 48%, rgb(53 169 232 / 28%) 49%, transparent 51%);
+    background-position: 8% 0, 62% 40%, 30% 0;
+    background-size: 130px 160px, 190px 230px, 260px 420px;
+    animation: estrelas-caindo 18s linear infinite;
+    opacity: .48;
+}
+
+body::after {
+    inset: -120% 0 0;
+    background-position: 38% 30%, 88% 0, 72% 0;
+    background-size: 170px 210px, 240px 290px, 340px 500px;
+    animation-duration: 27s;
+    opacity: .24;
+}
+
+@keyframes estrelas-caindo {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
 .container_principal{
-    background-color: rgb(0, 0, 0);
-
-    width: min(900px, calc(100vw - 32px));
-    height: min(700px, calc(100vh - 32px));
-    min-height: 0;
-
-    align-self: center;
-    justify-self: center;
-
+    width: min(1080px, calc(100vw - 32px));
+    height: min(760px, calc(100vh - 32px));
+    min-height: 560px;
     margin: 16px auto;
-
     display: flex;
     flex-direction: row;
-
     position: relative;
-
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid var(--azul-borda);
+    border-radius: 22px;
+    background: linear-gradient(135deg, rgb(14 35 48 / 98%), rgb(5 16 26 / 98%));
+    box-shadow: var(--sombra);
 }
 
 .container_principal p{
-    color: white;
+    color: var(--cinza);
 }
 
 .container_cartas {
     width: 70%;
     min-width: 0;
     min-height: 0;
-    padding: 16px 10px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: radial-gradient(circle, rgb(38 87 113 / 18%), transparent 62%);
 }
 
 .subcontainer_cartas {
     display: grid;
-    gap: 4px;
-
+    gap: 12px;
     justify-content: center;
     justify-items: center;
     align-content: center;
@@ -52,14 +109,10 @@
 }
 
 .container_config{
-    border: solid 1px white;
-
+    border-left: 1px solid var(--azul-borda);
+    background: rgb(4 15 24 / 60%);
     display: flex;
     flex-direction: column;
-
-    justify-self: center;
-    align-self: center;
-    
     position: relative;
     width: 30%;
     min-width: 0;
@@ -69,20 +122,66 @@
 }
 
 .container_config p{
-    color: white;
     text-align: center;
+    margin: 11px 16px;
+    line-height: 1.4;
+}
 
-    margin: 10px;
+.info {
+    padding: 20px 10px 8px;
+}
+
+.info p {
+    margin: 7px 0;
+}
+
+.avisos p {
+    color: var(--azul-acao);
+    font-size: .78rem;
+    font-weight: 700;
 }
 
 .button_container{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2px 6px;
+    gap: 8px;
     width: 100%;
     margin-top: auto;
-    padding: 10px 12px 20px;
+    padding: 12px 16px 22px;
     align-items: center;
+}
+
+@media (max-width: 700px) {
+    .container_principal {
+        width: min(100% - 20px, 560px);
+        height: auto;
+        min-height: calc(100vh - 20px);
+        margin: 10px auto;
+        flex-direction: column;
+        overflow: visible;
+    }
+
+    .container_cartas,
+    .container_config {
+        width: 100%;
+    }
+
+    .container_cartas {
+        min-height: 55vh;
+        padding: 22px 12px;
+    }
+
+    .container_config {
+        border-top: 1px solid var(--azul-borda);
+        border-left: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body::before,
+    body::after {
+        animation: none;
+    }
 }
 
 .button_container .button {

@@ -5,13 +5,13 @@
     width: var(--largura-carta, 120px);
     height: calc(var(--largura-carta, 120px) * 1.5);
 
-    border-radius: 10px;
+    border-radius: 14px;
     cursor: pointer;
     perspective: 800px;
 }
 
 .carta:focus-visible{
-    outline: 3px solid #4da3ff;
+    outline: 3px solid var(--azul-acao);
     outline-offset: 3px;
 }
 
@@ -41,16 +41,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border: 2px solid var(--azul-borda);
+    border-radius: 14px;
     backface-visibility: hidden;
 }
 
 .carta__verso{
-    background-color: #2f5d8c;
+    background:
+        radial-gradient(circle at 30% 25%, rgb(53 169 232 / 35%) 0 2px, transparent 3px),
+        linear-gradient(145deg, #1d5e88, #0d2b45);
+    box-shadow: inset 0 0 0 5px rgb(0 0 0 / 12%);
 }
 
 .carta__frente{
-    background-color: rgb(255, 255, 255);
+    background: var(--branco);
     transform: rotateY(180deg);
 }
 
@@ -59,11 +63,11 @@
 }
 
 .carta.par-correto .carta__frente{
-    box-shadow: inset 0 0 0 5px #25a244;
+    box-shadow: inset 0 0 0 5px #3cc58a;
 }
 
 .carta.par-errado .carta__frente{
-    box-shadow: inset 0 0 0 5px #d62828;
+    box-shadow: inset 0 0 0 5px #e56b79;
 }
 
 .carta img{

@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     padding: 16px;
-    background: rgb(0 0 0 / 65%);
+    background: rgb(2 10 17 / 78%);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
@@ -21,16 +21,19 @@
 .popup {
     position: relative;
     width: min(520px, 100%);
-    padding: 24px;
-    background: #5a5a5a;
-    color: #111;
+    padding: 28px;
+    border: 1px solid var(--azul-borda);
+    border-radius: 18px;
+    background: var(--azul-painel);
+    color: var(--branco);
+    box-shadow: var(--sombra);
 }
 
 .login h2,
 .popup h2 {
     margin: 0 0 12px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .login_status,
@@ -41,7 +44,7 @@
 
 .login_abas {
     display: flex;
-    border-bottom: 2px solid #111;
+    border-bottom: 2px solid var(--azul-borda);
     margin-bottom: 16px;
 }
 
@@ -56,6 +59,7 @@
 
 .login_abas button[aria-selected="true"] {
     font-weight: 700;
+    color: var(--azul-acao);
 }
 
 .login_form {
@@ -67,8 +71,10 @@
     width: 100%;
     min-height: 36px;
     padding: 7px 10px;
-    border: 1px solid #111;
-    background: #d3d3d3;
+    border: 1px solid var(--azul-borda);
+    border-radius: 8px;
+    background: var(--azul-noite);
+    color: var(--branco);
     font: inherit;
 }
 
@@ -77,9 +83,12 @@
     width: min(290px, 100%);
     min-height: 36px;
     margin: 10px auto 0;
-    border: 1px solid #111;
-    border-radius: 4px;
-    background: #999;
+    border: 0;
+    border-bottom: 3px solid var(--azul-acao-escuro);
+    border-radius: 9px;
+    background: var(--azul-acao);
+    color: #03111b;
+    font-weight: 700;
     font: inherit;
     cursor: pointer;
 }
@@ -90,7 +99,7 @@
 
 .form_mensagem {
     min-height: 1.3em;
-    color: #111;
+    color: var(--cinza);
 }
 
 .fechar_modal {
@@ -111,12 +120,12 @@
 }
 
 .fechar_modal:hover {
-    background: #222;
+    background: var(--cinza-escuro);
     transform: scale(1.08);
 }
 
 .fechar_modal:focus-visible {
-    outline: 2px solid #4da3ff;
+    outline: 2px solid var(--azul-acao);
     outline-offset: 2px;
 }
 

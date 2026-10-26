@@ -8,7 +8,7 @@ const listaIcones = [
   { nome: 'school', img: './src/image/icons/school.png' },
   { nome: 'accessibility', img: './src/image/icons/accessibility.png' },
   { nome: 'citizenship', img: './src/image/icons/citizenship.png' },
-  { nome: 'comunity', img: './src/image/icons/comunity.png' },
+  { nome: 'community', img: './src/image/icons/community.png' },
   { nome: 'financial_education', img: './src/image/icons/financial_education.png' },
   { nome: 'health', img: './src/image/icons/health.png' },
   { nome: 'region', img: './src/image/icons/region.png' },
