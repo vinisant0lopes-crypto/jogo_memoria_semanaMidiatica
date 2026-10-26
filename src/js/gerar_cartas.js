@@ -1,11 +1,19 @@
-export let quantidadePares = 8; // Exemplo: 6 pares = 12 cartas
+export let quantidadePares = 6;
 
 const listaIcones = [
   { nome: 'financy', img: './src/image/icons/financy.png' },
   { nome: 'infrastructure', img: './src/image/icons/infrastructure.png' },
   { nome: 'internet', img: './src/image/icons/internet.png' },
   { nome: 'old', img: './src/image/icons/old.png' },
-  { nome: 'school', img: './src/image/icons/school.png' }
+  { nome: 'school', img: './src/image/icons/school.png' },
+  { nome: 'accessibility', img: './src/image/icons/accessibility.png' },
+  { nome: 'citizenship', img: './src/image/icons/citizenship.png' },
+  { nome: 'comunity', img: './src/image/icons/comunity.png' },
+  { nome: 'financial_education', img: './src/image/icons/financial_education.png' },
+  { nome: 'health', img: './src/image/icons/health.png' },
+  { nome: 'region', img: './src/image/icons/region.png' },
+  { nome: 'security', img: './src/image/icons/security.png' },
+  { nome: 'work', img: './src/image/icons/work.png' }
 ];
 
 function definirTamanhoCartas(subcontainerCartas, totalCartas, colunas) {
@@ -59,19 +67,18 @@ function escolherColunas(totalCartas, containerCartas) {
     0,
     containerCartas.clientHeight - paddingVertical
   );
-  const proporcaoDesejada =
-    (larguraDisponivel * 1.5) / alturaDisponivel;
   let melhorColunas = 1;
-  let menorDiferenca = Number.POSITIVE_INFINITY;
+  let maiorCarta = 0;
 
   for (let colunas = 1; colunas <= totalCartas; colunas++) {
-    if (totalCartas % colunas !== 0) continue;
+    const linhas = Math.ceil(totalCartas / colunas);
+    const larguraPorColuna =
+      (larguraDisponivel - 4 * (colunas - 1)) / colunas;
+    const alturaPorLinha = (alturaDisponivel - 4 * (linhas - 1)) / linhas;
+    const tamanhoCarta = Math.min(120, larguraPorColuna, alturaPorLinha / 1.5);
 
-    const linhas = totalCartas / colunas;
-    const diferenca = Math.abs(colunas / linhas - proporcaoDesejada);
-
-    if (diferenca < menorDiferenca) {
-      menorDiferenca = diferenca;
+    if (tamanhoCarta > maiorCarta) {
+      maiorCarta = tamanhoCarta;
       melhorColunas = colunas;
     }
   }
@@ -131,6 +138,10 @@ export function gerarCartas() {
   });
 
   definirTamanhoCartas(subcontainerCartas, totalCartas, colunas);
+}
+
+export function definirQuantidadePares(novaQuantidade) {
+  quantidadePares = novaQuantidade;
 }
 
 window.addEventListener('resize', () => {

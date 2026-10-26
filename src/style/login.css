@@ -1,0 +1,132 @@
+.login_modal,
+.popup_modal {
+    position: fixed;
+    inset: 0;
+    z-index: 30;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    background: rgb(0 0 0 / 65%);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.login_modal[hidden],
+.popup_modal[hidden] {
+    display: none;
+}
+
+.login,
+.popup {
+    position: relative;
+    width: min(520px, 100%);
+    padding: 24px;
+    background: #5a5a5a;
+    color: #111;
+}
+
+.login h2,
+.popup h2 {
+    margin: 0 0 12px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.login_status,
+.popup p {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.login_abas {
+    display: flex;
+    border-bottom: 2px solid #111;
+    margin-bottom: 16px;
+}
+
+.login_abas button {
+    flex: 1;
+    padding: 8px;
+    border: 0;
+    background: transparent;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login_abas button[aria-selected="true"] {
+    font-weight: 700;
+}
+
+.login_form {
+    display: grid;
+    gap: 7px;
+}
+
+.login_form input {
+    width: 100%;
+    min-height: 36px;
+    padding: 7px 10px;
+    border: 1px solid #111;
+    background: #d3d3d3;
+    font: inherit;
+}
+
+.login_form > button,
+.login_sair {
+    width: min(290px, 100%);
+    min-height: 36px;
+    margin: 10px auto 0;
+    border: 1px solid #111;
+    border-radius: 4px;
+    background: #999;
+    font: inherit;
+    cursor: pointer;
+}
+
+.login_sair {
+    display: block;
+}
+
+.form_mensagem {
+    min-height: 1.3em;
+    color: #111;
+}
+
+.fechar_modal {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #00000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fechar_modal:hover {
+    background: #222;
+    transform: scale(1.08);
+}
+
+.fechar_modal:focus-visible {
+    outline: 2px solid #4da3ff;
+    outline-offset: 2px;
+}
+
+.fechar_modal::before {
+    content: '×';
+    color: #ddd;
+    font: 700 27px/28px Arial, sans-serif;
+    transition: color 0.2s ease;
+}
+
+.fechar_modal:hover::before {
+    color: #fff;
+}

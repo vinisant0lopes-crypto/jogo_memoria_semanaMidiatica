@@ -1,0 +1,89 @@
+.quiz_modal {
+    position: fixed;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    background: rgb(0 0 0 / 70%);
+}
+
+.quiz_modal[hidden] {
+    display: none;
+}
+
+.quiz {
+    width: min(625px, 100%);
+    padding: 18px;
+    background: #5a5a5a;
+    color: white;
+}
+
+.quiz_cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.quiz_cabecalho h2,
+.quiz_pergunta {
+    margin: 0 0 12px;
+}
+
+.quiz_pergunta {
+    padding: 12px;
+    background: #5a5a5a;
+    font-size: 1.15rem;
+}
+
+.quiz_alternativas {
+    display: grid;
+    gap: 10px;
+}
+
+.quiz_alternativa,
+.quiz_confirmar {
+    border: 0;
+    border-radius: 4px;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+}
+
+.quiz_alternativa {
+    background: white;
+    color: #111;
+    text-align: left;
+}
+
+.quiz_alternativa.selecionada {
+    background: #999;
+}
+
+.quiz_alternativa.correta {
+    background: #28a745;
+    color: white;
+}
+
+.quiz_alternativa.errada {
+    background: #dc3545;
+    color: white;
+}
+
+.quiz_alternativa:disabled {
+    cursor: default;
+}
+
+.quiz_confirmar {
+    display: block;
+    width: min(260px, 100%);
+    margin: 14px auto 0;
+    background: #999;
+    color: #111;
+}
+
+.quiz_confirmar:not(:disabled) {
+    cursor: pointer;
+}

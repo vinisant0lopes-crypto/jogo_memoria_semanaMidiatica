@@ -23,8 +23,16 @@
     transition: transform 0.5s ease;
 }
 
+.carta:hover .carta__interna{
+    transform: scale(1.03);
+}
+
 .carta.virada .carta__interna{
     transform: rotateY(180deg);
+}
+
+.carta.virada:hover .carta__interna{
+    transform: rotateY(180deg) scale(1.03);
 }
 
 .carta__face{
@@ -44,6 +52,10 @@
 .carta__frente{
     background-color: rgb(255, 255, 255);
     transform: rotateY(180deg);
+}
+
+.carta:hover .carta__face{
+    box-shadow: 0 4px 10px rgb(0 0 0 / 30%);
 }
 
 .carta.par-correto .carta__frente{

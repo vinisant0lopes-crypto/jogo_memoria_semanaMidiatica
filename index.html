@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./src/style/style.css">
     <link rel="stylesheet" href="./src/style/cartas.css">
     <link rel="stylesheet" href="./src/style/button.css">
+    <link rel="stylesheet" href="./src/style/placar.css">
+    <link rel="stylesheet" href="./src/style/quiz.css">
+    <link rel="stylesheet" href="./src/style/login.css">
+    <link rel="stylesheet" href="./src/style/popups.css">
 </head>
     <body>
 
@@ -26,8 +30,9 @@
             <div class="container_config">
                 
                 <div class="info">
+                    <br>
                     <div class="tempo">
-                        <p>Tempo: <span id="tempo">00:00</span></p>
+                        <p>Tempo: <span id="tempo">00:00:000</span></p>
                     </div>
                     <div class="tentativas">
                         <p>Tentativas: <span id="tentativas">0</span></p>
@@ -38,27 +43,142 @@
                     <div class="respostas_quiz">
                         <p>Respostas corretas do quiz: <span id="quiz_respostas">0</span></p>
                     </div>
+                    <br>
+                    <div class="avisos">
+                        <p>lembre-se de salvar seus dados no placar</p>
+                    </div>
                 </div>
 
                 <div class="button_container">
 
                     <div class="button">
-                        <button>Reiniciar Jogo</button>
+                        <button id="reiniciar-jogo" type="button">Reiniciar Jogo</button>
+                    </div>
+                    <div class="button button_dificuldade">
+                        <button type="button" aria-expanded="false" aria-controls="opcoes-dificuldade">Dificuldade</button>
+                        <div class="opcao" id="opcoes-dificuldade" hidden>
+                            <button type="button" data-dificuldade="facil">Fácil</button>
+                            <button type="button" data-dificuldade="medio">Médio</button>
+                            <button type="button" data-dificuldade="dificil">Difícil</button>
+                            <button type="button" data-dificuldade="edificil">Extremamente Difícil</button>
+                        </div>
                     </div>
                     <div class="button">
-                        <button>Dificuldade</button>
+                        <button id="abrir-placar" type="button">Placar</button>
                     </div>
                     <div class="button">
-                        <button>Placar</button>
+                        <button id="pausar-jogo" type="button">Pausar</button>
                     </div>
-                    <div class="button">
-                        <button>Pausar</button>
+                    <div class="button button_largo">
+                        <button id="abrir-login" type="button">Sair / Conectar</button>
+                    </div>
+                    <div class="button button_largo">
+                        <button id="salvar-placar" type="button">Salvar / Atualizar dados<br>placar.</button>
                     </div>
                 
                 </div>
 
             </div>
 
+        </div>
+
+        <div class="quiz_modal" id="quiz-modal" hidden>
+            <section class="quiz" role="dialog" aria-modal="true" aria-labelledby="quiz-categoria">
+                <div class="quiz_cabecalho">
+                    <h2 id="quiz-categoria"></h2>
+                    <span id="quiz-tempo">00:00:000</span>
+                </div>
+                <p class="quiz_pergunta" id="quiz-pergunta"></p>
+                <div class="quiz_alternativas" id="quiz-alternativas"></div>
+                <button class="quiz_confirmar" id="quiz-confirmar" type="button" disabled>
+                    Selecionar alternativa
+                </button>
+            </section>
+        </div>
+
+        <div class="placar_modal" id="placar-modal" hidden>
+            <section class="placar" role="dialog" aria-modal="true" aria-labelledby="placar-titulo">
+                <button class="fechar_modal" id="fechar-placar" type="button" aria-label="Fechar placar">
+                </button>
+                <h2 id="placar-titulo">Placar</h2>
+                <div class="placar_controles">
+                    <button id="abrir-filtros" class="placar_filtro-botao" type="button" aria-expanded="false" aria-controls="opcoes-filtro">
+                        <img src="./src/image/icons/filter_icon.png" alt="">
+                        Filtros
+                    </button>
+                    <div class="placar_filtros" id="opcoes-filtro" hidden>
+                        <button type="button" data-filtro="tempo">Melhor tempo</button>
+                        <button type="button" data-filtro="pontos">Total de pontos</button>
+                        <button type="button" data-filtro="tentativas">Total de tentativas</button>
+                        <button type="button" data-filtro="recente">Recente</button>
+                        <button type="button" data-filtro="antigo">Antigo</button>
+                    </div>
+
+                </div>
+                <div class="placar_tabela-container">
+                    <table class="placar_tabela">
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Nome</th>
+                                <th>Pontos</th>
+                                <th>Tempo</th>
+                                <th>Tentativas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="placar-lista"></tbody>
+                    </table>
+                    <p class="placar_vazio" id="placar-vazio">Nenhuma partida concluída.</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="login_modal" id="login-modal" hidden>
+            <section class="login" role="dialog" aria-modal="true" aria-labelledby="login-titulo">
+                <button class="fechar_modal" id="fechar-login" type="button" aria-label="Fechar login">
+                </button>
+                <h2 id="login-titulo">Conta do jogador</h2>
+                <p class="login_status" id="login-status"></p>
+                <div class="login_abas" role="tablist">
+                    <button id="aba-login" type="button" role="tab" aria-selected="true">Logar</button>
+                    <button id="aba-registro" type="button" role="tab" aria-selected="false">Registrar</button>
+                </div>
+                <form id="form-login" class="login_form">
+                    <label for="login-nome">Nome</label>
+                    <input id="login-nome" name="nome" autocomplete="username" required>
+                    <label for="login-senha">Senha</label>
+                    <input id="login-senha" name="senha" type="password" autocomplete="current-password" required>
+                    <button type="submit">Logar</button>
+                </form>
+                <form id="form-registro" class="login_form" hidden>
+                    <label for="registro-nome">Nome</label>
+                    <input id="registro-nome" name="nome" autocomplete="username" required>
+                    <label for="registro-senha">Senha</label>
+                    <input id="registro-senha" name="senha" type="password" autocomplete="new-password" required minlength="4">
+                    <button type="submit">Registrar</button>
+                </form>
+                <button class="login_sair" id="sair-login" type="button" hidden>Sair da conta</button>
+                <p class="form_mensagem" id="login-mensagem" role="status"></p>
+            </section>
+        </div>
+
+        <div class="popup_modal" id="salvar-modal" hidden>
+            <section class="popup" role="dialog" aria-modal="true" aria-labelledby="salvar-titulo">
+                <button class="fechar_modal" id="fechar-salvar" type="button" aria-label="Fechar">
+                </button>
+                <h2 id="salvar-titulo"></h2>
+                <p id="salvar-instrucoes"></p>
+                <form id="form-salvar" class="login_form">
+                    <div id="salvar-nome-campo">
+                        <label for="salvar-nome">Nome</label>
+                        <input id="salvar-nome" name="nome" autocomplete="username">
+                    </div>
+                    <label for="salvar-senha">Senha</label>
+                    <input id="salvar-senha" name="senha" type="password" autocomplete="current-password" required>
+                    <button id="confirmar-salvar" type="submit"></button>
+                </form>
+                <p class="form_mensagem" id="salvar-mensagem" role="status"></p>
+            </section>
         </div>
 
         <script type="module" src="./src/js/script.js"></script>

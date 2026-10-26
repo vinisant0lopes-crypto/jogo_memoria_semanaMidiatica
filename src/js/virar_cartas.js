@@ -5,6 +5,12 @@ let cartasSelecionadas = [];
 let cartasEncontradas = new Set();
 let verificandoPar = false;
 
+export function reiniciarEstadoCartas() {
+  cartasSelecionadas = [];
+  cartasEncontradas = new Set();
+  verificandoPar = false;
+}
+
 function virarCarta(carta) {
   carta.classList.add('virada');
   carta.setAttribute('aria-label', 'Carta revelada');
@@ -30,6 +36,17 @@ function finalizarVerificacao(cartaA, cartaB) {
     cartasEncontradas.add(cartaA);
     cartasEncontradas.add(cartaB);
     verificandoPar = false;
+    document.dispatchEvent(
+      new CustomEvent('memory:pair-result', {
+        detail: {
+          correto: true,
+          nome: cartaA.dataset.nome,
+          concluido:
+            cartasEncontradas.size ===
+            document.querySelector('.subcontainer_cartas').children.length
+        }
+      })
+    );
   } else {
     cartaA.classList.add('par-errado');
     cartaB.classList.add('par-errado');
@@ -40,6 +57,11 @@ function finalizarVerificacao(cartaA, cartaB) {
       cartaA.classList.remove('par-errado');
       cartaB.classList.remove('par-errado');
       verificandoPar = false;
+      document.dispatchEvent(
+        new CustomEvent('memory:pair-result', {
+          detail: { correto: false, concluido: false }
+        })
+      );
     }, TEMPO_BORDA);
   }
 
@@ -61,7 +83,12 @@ function lidarComClique(evento) {
   virarCarta(carta);
   cartasSelecionadas.push(carta);
 
+  if (cartasSelecionadas.length === 1) {
+    document.dispatchEvent(new CustomEvent('memory:first-card'));
+  }
+
   if (cartasSelecionadas.length === 2) {
+    document.dispatchEvent(new CustomEvent('memory:attempt'));
     verificandoPar = true;
     const [cartaA, cartaB] = cartasSelecionadas;
     window.setTimeout(

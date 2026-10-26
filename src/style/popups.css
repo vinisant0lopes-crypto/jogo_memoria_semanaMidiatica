@@ -1,0 +1,12 @@
+.popup {
+    width: min(560px, 100%);
+}
+
+.popup .login_form {
+    margin-top: 16px;
+}
+
+.popup .login_form[hidden],
+.login_form[hidden] {
+    display: none;
+}
