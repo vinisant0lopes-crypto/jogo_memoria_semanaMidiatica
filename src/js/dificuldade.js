@@ -8,9 +8,9 @@ import { reiniciarContabilizacao } from './contabilizar_pontos.js';
 
 const paresPorDificuldade = {
   facil: 6,
-  medio: 10,
-  dificil: 12,
-  edificil: 15
+  medio: 12,
+  dificil: 16,
+  edificil: 18
 };
 
 function fecharOpcoes(botao, opcoes) {
