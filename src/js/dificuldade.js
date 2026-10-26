@@ -13,6 +13,8 @@ const paresPorDificuldade = {
   edificil: 18
 };
 
+// legal
+
 function fecharOpcoes(botao, opcoes) {
   opcoes.hidden = true;
   botao.setAttribute('aria-expanded', 'false');
