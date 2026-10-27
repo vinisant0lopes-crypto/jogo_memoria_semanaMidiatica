@@ -11,6 +11,15 @@ export function reiniciarEstadoCartas() {
   verificandoPar = false;
 }
 
+export function esconderCartasNaoEncontradas() {
+  document.querySelectorAll('.subcontainer_cartas .carta').forEach((carta) => {
+    if (cartasEncontradas.has(carta)) return;
+
+    esconderCarta(carta);
+    carta.classList.remove('par-errado');
+  });
+}
+
 function virarCarta(carta) {
   carta.classList.add('virada');
   carta.setAttribute('aria-label', 'Carta revelada');
@@ -31,6 +40,8 @@ function finalizarVerificacao(cartaA, cartaB) {
   const mesmoPar = cartaA.dataset.nome === cartaB.dataset.nome;
 
   if (mesmoPar) {
+    virarCarta(cartaA);
+    virarCarta(cartaB);
     cartaA.classList.add('par-correto');
     cartaB.classList.add('par-correto');
     cartasEncontradas.add(cartaA);
@@ -82,6 +93,7 @@ function lidarComClique(evento) {
 
   virarCarta(carta);
   cartasSelecionadas.push(carta);
+  document.dispatchEvent(new CustomEvent('memory:card-clicked'));
 
   if (cartasSelecionadas.length === 1) {
     document.dispatchEvent(new CustomEvent('memory:first-card'));

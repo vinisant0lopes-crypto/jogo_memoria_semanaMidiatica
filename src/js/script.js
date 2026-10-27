@@ -11,7 +11,10 @@ import {
   iniciarContabilizacao,
   reiniciarContabilizacao
 } from './contabilizar_pontos.js';
-import { reiniciarEstadoCartas } from './virar_cartas.js';
+import {
+  esconderCartasNaoEncontradas,
+  reiniciarEstadoCartas
+} from './virar_cartas.js';
 import { iniciarPlacar } from './placar.js';
 import { iniciarQuiz, reiniciarQuiz } from './quiz.js';
 import { iniciarLogin } from './login.js';
@@ -33,10 +36,19 @@ iniciarStreak();
 document.querySelector('#pausar-jogo')?.addEventListener('click', (evento) => {
   const botao = evento.currentTarget;
   if (pausarCronometro()) {
+    esconderCartasNaoEncontradas();
     botao.textContent = 'Continuar';
   } else if (retomarCronometro()) {
     botao.textContent = 'Pausar';
   }
+});
+
+document.addEventListener('memory:card-clicked', () => {
+  const botao = document.querySelector('#pausar-jogo');
+  if (!botao) return;
+
+  retomarCronometro();
+  botao.textContent = 'Pausar';
 });
 
 document.querySelector('#reiniciar-jogo')?.addEventListener('click', () => {
